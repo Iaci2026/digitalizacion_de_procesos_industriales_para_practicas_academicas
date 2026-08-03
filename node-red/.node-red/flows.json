@@ -1,0 +1,4158 @@
+[
+    {
+        "id": "858835c4dddfb63d",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "06f4107b69249e80",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "base_de_datos",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "93f6bfeb2182f912",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.2",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": "5000",
+        "timeout": "5000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB17,REAL66",
+                "name": "Temperatura_html"
+            },
+            {
+                "addr": "DB17,REAL54",
+                "name": "PresionAgua_html"
+            },
+            {
+                "addr": "DB17,REAL50",
+                "name": "PresionAire_html"
+            },
+            {
+                "addr": "DB17,X48.0",
+                "name": "Luz_Cooler_html"
+            },
+            {
+                "addr": "DB17,REAL62",
+                "name": "Nivel_html"
+            },
+            {
+                "addr": "DB17,REAL72",
+                "name": "Caudal_html"
+            },
+            {
+                "addr": "DB17,X48.2",
+                "name": "Luz_Resistencia_html"
+            },
+            {
+                "addr": "M114.0",
+                "name": "AlarmaParo_html"
+            },
+            {
+                "addr": "M114.1",
+                "name": "AlarmaNivelAA_html"
+            },
+            {
+                "addr": "M114.2",
+                "name": "AlarmaTempAlta_html"
+            },
+            {
+                "addr": "M114.3",
+                "name": "AlarmaPresionAireBaja_html"
+            },
+            {
+                "addr": "M114.4",
+                "name": "AlarmaNivelAlto_html"
+            },
+            {
+                "addr": "DB17,REAL00",
+                "name": "SP_Nivel_html"
+            },
+            {
+                "addr": "DB17,REAL8",
+                "name": "Ki_Nivel_html"
+            },
+            {
+                "addr": "DB17,REAL12",
+                "name": "Kp_Nivel_html"
+            },
+            {
+                "addr": "DB17,REAL16",
+                "name": "Kd_Nivel_html"
+            },
+            {
+                "addr": "DB17,REAL30",
+                "name": "Ki_Temp_html"
+            },
+            {
+                "addr": "DB17,REAL34",
+                "name": "Kp_Temp_html"
+            },
+            {
+                "addr": "DB17,REAL38",
+                "name": "Kd_Temp_html"
+            },
+            {
+                "addr": "DB17,X46.1",
+                "name": "Modo_PID_Nivel_html"
+            },
+            {
+                "addr": "DB17,X24.4",
+                "name": "Modo_PID_Temp_html"
+            },
+            {
+                "addr": "DB17,X47.5",
+                "name": "Luz_MB001_html"
+            },
+            {
+                "addr": "DB17,X47.6",
+                "name": "Luz_MB002_html"
+            },
+            {
+                "addr": "DB17,X24.2",
+                "name": "Alimentacion_KM1_html"
+            },
+            {
+                "addr": "DB17,X46.2",
+                "name": "PIDNivelOFF_html"
+            },
+            {
+                "addr": "DB17,X24.5",
+                "name": "PIDTempOFF_html"
+            },
+            {
+                "addr": "DB17,REAL76",
+                "name": "SP_Temp_html"
+            },
+            {
+                "addr": "DB4,REAL38",
+                "name": "Temperatura"
+            },
+            {
+                "addr": "DB4,REAL26",
+                "name": "PresionAgua"
+            },
+            {
+                "addr": "DB4,REAL22",
+                "name": "PresionAire"
+            },
+            {
+                "addr": "DB4,X20.0",
+                "name": "Cooler"
+            },
+            {
+                "addr": "DB4,REAL34",
+                "name": "Nivel"
+            },
+            {
+                "addr": "DB4,REAL44",
+                "name": "Caudal"
+            },
+            {
+                "addr": "DB4,X20.2",
+                "name": "Resistencia"
+            },
+            {
+                "addr": "M114.0",
+                "name": "AlarmaParo"
+            },
+            {
+                "addr": "M114.1",
+                "name": "AlarmaNivelAA"
+            },
+            {
+                "addr": "M114.2",
+                "name": "AlarmaTempAlta"
+            },
+            {
+                "addr": "M114.3",
+                "name": "AlarmaPresionAireBaja"
+            },
+            {
+                "addr": "M114.4",
+                "name": "AlarmaNivelAlto"
+            },
+            {
+                "addr": "DB19,REAL12",
+                "name": "SP_Nivel"
+            },
+            {
+                "addr": "DB19,REAL0",
+                "name": "Ki_Nivel"
+            },
+            {
+                "addr": "DB19,REAL4",
+                "name": "Kp_Nivel"
+            },
+            {
+                "addr": "DB19,REAL8",
+                "name": "Kd_Nivel"
+            },
+            {
+                "addr": "DB19,REAL20",
+                "name": "Ki_Temp"
+            },
+            {
+                "addr": "DB19,REAL24",
+                "name": "Kp_Temp"
+            },
+            {
+                "addr": "DB19,REAL28",
+                "name": "Kd_Temp"
+            },
+            {
+                "addr": "DB4,X42.4",
+                "name": "NivelAuto"
+            },
+            {
+                "addr": "DB4,X42.3",
+                "name": "NivelManual"
+            },
+            {
+                "addr": "DB4,X42.1",
+                "name": "Autotemp"
+            },
+            {
+                "addr": "DB4,X19.5",
+                "name": "MB001"
+            },
+            {
+                "addr": "DB4,X19.6",
+                "name": "MB002"
+            },
+            {
+                "addr": "DB4,X8.2",
+                "name": "EncendidoGeneral"
+            },
+            {
+                "addr": "DB4,X42.5",
+                "name": "PIDNivelOFF"
+            },
+            {
+                "addr": "DB4,X42.2",
+                "name": "PIDTempOFF"
+            },
+            {
+                "addr": "DB19,REAL16",
+                "name": "SP_Temp"
+            },
+            {
+                "addr": "DB17,X46.4",
+                "name": "Boton_paro_html"
+            },
+            {
+                "addr": "DB17,X82.0",
+                "name": "Boton_html"
+            },
+            {
+                "addr": "DB17,X24.1",
+                "name": "Eleccion_proceso_html"
+            },
+            {
+                "addr": "DB7,REAL18",
+                "name": "Salida_PID_temperatura"
+            },
+            {
+                "addr": "DB7,REAL0",
+                "name": "Salida_PID_Nivel"
+            },
+            {
+                "addr": "DB17,REAL26",
+                "name": "Send_PID_temp"
+            },
+            {
+                "addr": "DB17,REAL4",
+                "name": "Send_PID_Niv"
+            },
+            {
+                "addr": "DB19,REAL12",
+                "name": "SETPOINT_NIVEL"
+            },
+            {
+                "addr": "DB17,REAL76",
+                "name": "SETPOINT_TEMPERATURA"
+            },
+            {
+                "addr": "DB4,X18.5",
+                "name": "ConfirmacionKM1"
+            },
+            {
+                "addr": "DB18,X82.0",
+                "name": "Confirmacion_HTML_led"
+            },
+            {
+                "addr": "DB17,X71.0",
+                "name": "SendResetAlarm"
+            },
+            {
+                "addr": "DB17,X70.3",
+                "name": "Luz_PID_Man_Niv_html"
+            },
+            {
+                "addr": "DB17,X70.0",
+                "name": "Luz_PID_Man_temp_html"
+            }
+        ]
+    },
+    {
+        "id": "b55d1d58ba5ca7dd",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9ce648718ce0bf5d",
+        "type": "ui_tab",
+        "name": "Temperatura",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7d0321abdf5cb7cf",
+        "type": "ui_group",
+        "name": "Temperatura",
+        "tab": "9ce648718ce0bf5d",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "065eebdf040b7cd7",
+        "type": "ui_tab",
+        "name": "Nivel",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "97567881833f53ab",
+        "type": "ui_group",
+        "name": "Valores",
+        "tab": "065eebdf040b7cd7",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "07fc9370cc2492c9",
+        "type": "ui_group",
+        "name": "Graficos",
+        "tab": "065eebdf040b7cd7",
+        "order": 4,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5699fc037d295838",
+        "type": "ui_group",
+        "name": "Estado",
+        "tab": "065eebdf040b7cd7",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5cc1fa82dc5843e8",
+        "type": "ui_group",
+        "name": "Estado",
+        "tab": "9ce648718ce0bf5d",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4ddce2a4b037f79f",
+        "type": "ui_group",
+        "name": "Graficos",
+        "tab": "9ce648718ce0bf5d",
+        "order": 3,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f29eb355027dc6ca",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "7d0321abdf5cb7cf",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "6146999f0e9e4667",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "7d0321abdf5cb7cf",
+        "order": 7,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "01b6acf488d2a497",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "7d0321abdf5cb7cf",
+        "order": 8,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "2a86076739f4a80a",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "7d0321abdf5cb7cf",
+        "order": 9,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "6207b7a2bfe3dad6",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "5cc1fa82dc5843e8",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "6eec5f91cbd44217",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "97567881833f53ab",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "4f9948f8da48c2a0",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "97567881833f53ab",
+        "order": 7,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "c8d89ca513c2434e",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "5699fc037d295838",
+        "order": 4,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "fcd07f8bcab7d21a",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "07fc9370cc2492c9",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5f6985e6e9f95bb5",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "07fc9370cc2492c9",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "87c3258b6ad28594",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "07fc9370cc2492c9",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "714d9db2be15c8b3",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "07fc9370cc2492c9",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0feb0141ee3a572a",
+        "type": "ui_spacer",
+        "z": "858835c4dddfb63d",
+        "name": "spacer",
+        "group": "07fc9370cc2492c9",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "346dc6175970e240",
+        "type": "ui_gauge",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "4ddce2a4b037f79f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp actual",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "75",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 2130,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "094fb85e2bca0414",
+        "type": "ui_gauge",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "07fc9370cc2492c9",
+        "order": 2,
+        "width": 7,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Caudal",
+        "label": "L / min",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 2940,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "695fea156eee1262",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 1700,
+        "y": 260,
+        "wires": [
+            [
+                "ab7e753a0a8db857",
+                "cae918aea7b04ad8"
+            ]
+        ]
+    },
+    {
+        "id": "ab7e753a0a8db857",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "Guardar Variables ",
+        "func": "flow.set(\"plcData\", msg.payload);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2010,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c9189a1326f1164",
+        "type": "inject",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1820,
+        "y": 520,
+        "wires": [
+            [
+                "29b861bc7657c628"
+            ]
+        ]
+    },
+    {
+        "id": "29b861bc7657c628",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "Guardar Dinamicos",
+        "func": "let d = flow.get(\"plcData\");\nif (!d) return null;\n\nmsg.topic = `\nINSERT INTO historico_dinamico (\ntemperatura, presion_agua, presion_aire, cooler,\nnivel, caudal, resistencia, sp_nivel, sp_temp, salida_pid_temperatura,\nsalida_pid_nivel\n) VALUES (?,?,?,?,?,?,?,?,?,?,?)\n`;\n\nmsg.payload = [\nd.Temperatura,\nd.PresionAgua,\nd.PresionAire,\nd.Cooler ? 1 : 0,\nd.Nivel,\nd.Caudal,\nd.Resistencia ? 1 : 0,\nd.SP_Nivel,\nd.SP_Temp,\nd.Salida_PID_temperatura,\nd.Salida_PID_Nivel\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2070,
+        "y": 520,
+        "wires": [
+            [
+                "68dd25d087cb08cd"
+            ]
+        ]
+    },
+    {
+        "id": "68dd25d087cb08cd",
+        "type": "mysql",
+        "z": "858835c4dddfb63d",
+        "mydb": "06f4107b69249e80",
+        "name": "Nodo SQL",
+        "x": 2270,
+        "y": 520,
+        "wires": [
+            [
+                "293da7085cd03f4f"
+            ]
+        ]
+    },
+    {
+        "id": "293da7085cd03f4f",
+        "type": "debug",
+        "z": "858835c4dddfb63d",
+        "name": "debug 23",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2440,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "cae918aea7b04ad8",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "Guardar Estaticos",
+        "func": "let prev = flow.get(\"prevStatic\") || {};\nlet curr = msg.payload;\n\n// armamos objeto solo con estáticos\nlet actual = {\nAlarmaParo: curr.AlarmaParo,\nAlarmaNivelAA: curr.AlarmaNivelAA,\nAlarmaTempAlta: curr.AlarmaTempAlta,\nAlarmaPresionAireBaja: curr.AlarmaPresionAireBaja,\nAlarmaNivelAlto: curr.AlarmaNivelAlto,\nSP_Nivel: curr.SP_Nivel,\nKi_Nivel: curr.Ki_Nivel,\nKp_Nivel: curr.Kp_Nivel,\nKd_Nivel: curr.Kd_Nivel,\nKi_Temp: curr.Ki_Temp,\nKp_Temp: curr.Kp_Temp,\nKd_Temp: curr.Kd_Temp,\nNivelAuto: curr.NivelAuto,\nNivelManual: curr.NivelManual,\nTempAuto: curr.TempAuto,\nTempManual: curr.TempManual,\nMB001: curr.MB001,\nMB002: curr.MB002,\nEncendidoGeneral: curr.EncendidoGeneral,\nPIDNivelOFF: curr.PIDNivelOFF,\nPIDTempOFF: curr.PIDTempOFF,\nSP_Temp: curr.SP_Temp,\nSalida_PID_Nivel: curr.Salida_PID_Nivel,\nSalida_PID_temperatura: curr.Salida_PID_temperatura\n};\n\n// comparar cambios\nlet cambio = false;\n\nfor (let key in actual) {\n    if (actual[key] !== prev[key]) {\n        cambio = true;\n        break;\n    }\n}\n\n// guardar estado actual\nflow.set(\"prevStatic\", actual);\n\n// si no hay cambio → no guardar\nif (!cambio) return null;\n\n// INSERT\nmsg.topic = `\nINSERT INTO historico_estatico (\nalarma_paro,\nalarma_nivel_aa,\nalarma_temp,\nalarma_presion,\nalarma_nivel,\nsp_nivel,\nki_nivel,\nkp_nivel,\nkd_nivel,\nki_temp,\nkp_temp,\nkd_temp,\nnivel_auto,\nnivel_manual,\ntemp_auto,\ntemp_manual,\nmb001,\nmb002,\nencendido_general,\npid_nivel_off,\npid_temp_off,\nsp_temp\n\n) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\n`;\n\nmsg.payload = [\nactual.AlarmaParo ? 1 : 0,\nactual.AlarmaNivelAA ? 1 : 0,\nactual.AlarmaTempAlta ? 1 : 0,\nactual.AlarmaPresionAireBaja ? 1 : 0,\nactual.AlarmaNivelAlto ? 1 : 0,\n\nactual.SP_Nivel,\nactual.Ki_Nivel,\nactual.Kp_Nivel,\nactual.Kd_Nivel,\n\nactual.Ki_Temp,\nactual.Kp_Temp,\nactual.Kd_Temp,\n\nactual.NivelAuto ? 1 : 0,\nactual.NivelManual ? 1 : 0,\nactual.TempAuto ? 1 : 0,\nactual.TempManual ? 1 : 0,\n\nactual.MB001 ? 1 : 0,\nactual.MB002 ? 1 : 0,\nactual.EncendidoGeneral ? 1 : 0,\n\nactual.PIDNivelOFF ? 1 : 0,\nactual.PIDTempOFF ? 1 : 0,\n\nactual.SP_Temp\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2070,
+        "y": 460,
+        "wires": [
+            [
+                "b86e00d4be020f8d"
+            ]
+        ]
+    },
+    {
+        "id": "b86e00d4be020f8d",
+        "type": "mysql",
+        "z": "858835c4dddfb63d",
+        "mydb": "06f4107b69249e80",
+        "name": "Nodo SQL",
+        "x": 2270,
+        "y": 460,
+        "wires": [
+            [
+                "bc21170d46b8e951"
+            ]
+        ]
+    },
+    {
+        "id": "bc21170d46b8e951",
+        "type": "debug",
+        "z": "858835c4dddfb63d",
+        "name": "debug 24",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2440,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a86404bac1db0965",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Carga en base de datos MariaDB SQL ",
+        "info": "",
+        "x": 1630,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3d56ccc21701ebf1",
+        "type": "inject",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1680,
+        "y": 920,
+        "wires": [
+            [
+                "d53e461f03b2aa55"
+            ]
+        ]
+    },
+    {
+        "id": "e44857f754b4fcb3",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "visualización tipo SCADA.",
+        "info": "",
+        "x": 1670,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "40e99d03413ec629",
+        "type": "mysql",
+        "z": "858835c4dddfb63d",
+        "mydb": "06f4107b69249e80",
+        "name": "nodo_sql",
+        "x": 2080,
+        "y": 920,
+        "wires": [
+            [
+                "d1bb73d99a51e877"
+            ]
+        ]
+    },
+    {
+        "id": "d1bb73d99a51e877",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "Crear Grafica",
+        "func": "let data = msg.payload;\n\nif (!Array.isArray(data)) {\n    node.error(\"La consulta no devolvió un array\");\n    return null;\n}\n\ndata.reverse();\n\nlet nivel = [];\nlet spNiv = [];\nlet salidaPIDNivel = [];\n\ndata.forEach((row, i) => {\n\n    let fecha = new Date(row.fecha);\n\n    // Mostrar sólo los primeros 3 registros\n    if (i < 3) {\n        node.warn({\n            fechaOriginal: row.fecha,\n            fechaConvertida: fecha,\n            timestamp: fecha.getTime()\n        });\n    }\n\n    nivel.push({\n        x: fecha.getTime(),\n        y: parseFloat(row.nivel || 0)\n    });\n\n    spNiv.push({\n        x: fecha.getTime(),\n        y: parseFloat(row.sp_nivel || 0)\n    });\n\n    salidaPIDNivel.push({\n        x: fecha.getTime(),\n        y: parseFloat(row.salida_pid_nivel || 0)\n    });\n\n});\n\nmsg.payload = [{\n    series: [\n        \"Nivel\",\n        \"SP Nivel\",\n        \"Salida PID Nivel\"\n    ],\n    data: [\n        nivel,\n        spNiv,\n        salidaPIDNivel\n    ],\n    labels: []\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2300,
+        "y": 920,
+        "wires": [
+            [
+                "9483386d3009a0a3"
+            ]
+        ]
+    },
+    {
+        "id": "d53e461f03b2aa55",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "Consultar Nivel",
+        "func": "msg.topic = `\nSELECT\n    fecha,\n    nivel,\n    sp_nivel,\n    salida_pid_nivel\nFROM historico_dinamico\nORDER BY fecha DESC\nLIMIT 500\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 920,
+        "wires": [
+            [
+                "40e99d03413ec629"
+            ]
+        ]
+    },
+    {
+        "id": "9483386d3009a0a3",
+        "type": "ui_chart",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "97567881833f53ab",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "label": "Nivel",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0071c2",
+            "#f60909",
+            "#0fff1f",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2530,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73ec4bf56f8a422d",
+        "type": "inject",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1660,
+        "y": 840,
+        "wires": [
+            [
+                "725a4b8b3d4947b4"
+            ]
+        ]
+    },
+    {
+        "id": "a0aae766af85bb11",
+        "type": "mysql",
+        "z": "858835c4dddfb63d",
+        "mydb": "06f4107b69249e80",
+        "name": "nodo_sql",
+        "x": 2080,
+        "y": 840,
+        "wires": [
+            [
+                "d249ed72e9e880f9"
+            ]
+        ]
+    },
+    {
+        "id": "d249ed72e9e880f9",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "Crear Grafica",
+        "func": "let data = msg.payload;\n\nif (!Array.isArray(data)) {\n    node.error(\"La consulta no devolvió un array\");\n    return null;\n}\n\ndata.reverse();\n\nlet temperatura = [];\nlet spTemp = [];\nlet salidaPID = [];\n\ndata.forEach(row => {\n\n    let fecha = new Date(row.fecha);\n\n    temperatura.push({\n        x: fecha,\n        y: parseFloat(row.temperatura || 0)\n    });\n\n    spTemp.push({\n        x: fecha,\n        y: parseFloat(row.sp_temp || 0)\n    });\n\n    salidaPID.push({\n        x: fecha,\n        y: parseFloat(row.salida_pid_temperatura || 0)\n    });\n\n});\n\nmsg.payload = [{\n    series: [\n        \"Temperatura\",\n        \"SP Temp\",\n        \"Salida PID\"\n    ],\n    data: [\n        temperatura,\n        spTemp,\n        salidaPID\n    ],\n    labels: []\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2300,
+        "y": 840,
+        "wires": [
+            [
+                "5bf676e5f9000659"
+            ]
+        ]
+    },
+    {
+        "id": "725a4b8b3d4947b4",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "Consulta Temperatura",
+        "func": "msg.topic = `\nSELECT\n    fecha,\n    temperatura,\n    sp_temp,\n    salida_pid_temperatura\nFROM historico_dinamico\nORDER BY fecha DESC\nLIMIT 500\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 840,
+        "wires": [
+            [
+                "a0aae766af85bb11"
+            ]
+        ]
+    },
+    {
+        "id": "5bf676e5f9000659",
+        "type": "ui_chart",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "7d0321abdf5cb7cf",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0189e9",
+            "#9f0909",
+            "#00c742",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2530,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ae6d5daf3aac0d1",
+        "type": "ui_text_input",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5699fc037d295838",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "datetime-local",
+        "delay": "0",
+        "topic": "desde",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 2870,
+        "y": 1180,
+        "wires": [
+            [
+                "4106afb35fae7e3a"
+            ]
+        ]
+    },
+    {
+        "id": "879856aac73f8e08",
+        "type": "ui_text_input",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5699fc037d295838",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "datetime-local",
+        "delay": "0",
+        "topic": "hasta",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 2870,
+        "y": 1240,
+        "wires": [
+            [
+                "4106afb35fae7e3a"
+            ]
+        ]
+    },
+    {
+        "id": "3035d197d9bc02e3",
+        "type": "ui_button",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "5699fc037d295838",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Consultar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2840,
+        "y": 1300,
+        "wires": [
+            [
+                "8d33927f67fb5626"
+            ]
+        ]
+    },
+    {
+        "id": "8d33927f67fb5626",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "function 8",
+        "func": "let desde = flow.get(\"desde\");\nlet hasta = flow.get(\"hasta\");\n\nif (desde == null || hasta == null) {\n    node.warn(\"Faltan fechas\");\n    return null;\n}\n\n// Convierte timestamp a formato MySQL\nfunction convertirFecha(ts) {\n\n    let d = new Date(Number(ts));\n\n    // Compensar GMT-3\n    d.setHours(d.getHours() + 3);\n\n    let anio = d.getFullYear();\n    let mes = String(d.getMonth() + 1).padStart(2, \"0\");\n    let dia = String(d.getDate()).padStart(2, \"0\");\n\n    let hora = String(d.getHours()).padStart(2, \"0\");\n    let min = String(d.getMinutes()).padStart(2, \"0\");\n    let seg = String(d.getSeconds()).padStart(2, \"0\");\n\n    return `${anio}-${mes}-${dia} ${hora}:${min}:${seg}`;\n}\n\ndesde = convertirFecha(desde);\nhasta = convertirFecha(hasta);\n\nnode.warn({\n    desde: desde,\n    hasta: hasta\n});\n\nmsg.topic = `\nSELECT\n    fecha,\n    nivel,\n    sp_nivel,\n    salida_pid_nivel\nFROM historico_dinamico\nWHERE fecha BETWEEN '${desde}' AND '${hasta}'\nORDER BY fecha ASC\n`;\n\nnode.warn(msg.topic);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3000,
+        "y": 1300,
+        "wires": [
+            [
+                "fbf86874701897c9"
+            ]
+        ]
+    },
+    {
+        "id": "abd3c612ec428d16",
+        "type": "ui_chart",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "5699fc037d295838",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "label": "Nivel Historico",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#c70a14",
+            "#57ff0f",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 3580,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbf86874701897c9",
+        "type": "mysql",
+        "z": "858835c4dddfb63d",
+        "mydb": "06f4107b69249e80",
+        "name": "",
+        "x": 3200,
+        "y": 1300,
+        "wires": [
+            [
+                "18b462dd6822b156"
+            ]
+        ]
+    },
+    {
+        "id": "4106afb35fae7e3a",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "function 9",
+        "func": "if (msg.topic === \"desde\") {\n    flow.set(\"desde\", msg.payload);\n    node.warn(\"Guardado desde: \" + msg.payload);\n}\n\nif (msg.topic === \"hasta\") {\n    flow.set(\"hasta\", msg.payload);\n    node.warn(\"Guardado hasta: \" + msg.payload);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3060,
+        "y": 1200,
+        "wires": [
+            [
+                "e4dc87f1cd972638"
+            ]
+        ]
+    },
+    {
+        "id": "18b462dd6822b156",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "function 10",
+        "func": "let data = msg.payload;\n\nlet nivel = [];\nlet sp = [];\nlet salidaPIDNiv = [];\n\ndata.forEach(row => {\n    nivel.push({ x: new Date(row.fecha), y: row.nivel });\n    sp.push({ x: new Date(row.fecha), y: row.sp_nivel }); \n    salidaPIDNiv.push({ x: new Date(row.fecha), y: row.salida_pid_nivel });\n});\n\nmsg.payload = [{\n    series: [\"Nivel\", \"SP_Nivel\",\"Salida_PID_Nivel\"],\n    data: [nivel, sp, salidaPIDNiv],\n    labels: []\n}];\nflow.set(\"ultimaGraficaNiv\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3390,
+        "y": 1300,
+        "wires": [
+            [
+                "abd3c612ec428d16"
+            ]
+        ]
+    },
+    {
+        "id": "e4dc87f1cd972638",
+        "type": "debug",
+        "z": "858835c4dddfb63d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3220,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "d9987219051e5994",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Consulta historizado nivel",
+        "info": "",
+        "x": 2990,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "fc685ecf9d20e28f",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Consulta historizado temperatura",
+        "info": "",
+        "x": 1750,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "e3c00bbf0dec5ca9",
+        "type": "ui_text_input",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5cc1fa82dc5843e8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "datetime-local",
+        "delay": "0",
+        "topic": "desde2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1670,
+        "y": 1180,
+        "wires": [
+            [
+                "c5278210c1a74a4d"
+            ]
+        ]
+    },
+    {
+        "id": "5bb587d8f5c4b5ef",
+        "type": "ui_text_input",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "5cc1fa82dc5843e8",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "datetime-local",
+        "delay": "0",
+        "topic": "hasta2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1670,
+        "y": 1240,
+        "wires": [
+            [
+                "c5278210c1a74a4d"
+            ]
+        ]
+    },
+    {
+        "id": "f28284c7a501af55",
+        "type": "ui_button",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "5cc1fa82dc5843e8",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Consultar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1640,
+        "y": 1300,
+        "wires": [
+            [
+                "a20597d741a03a28"
+            ]
+        ]
+    },
+    {
+        "id": "a20597d741a03a28",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "function 11",
+        "func": "node.warn(\"ENTRÓ AL BOTÓN CONSULTAR\");\nlet desde2 = flow.get(\"desde2\");\nlet hasta2 = flow.get(\"hasta2\");\n\nif (desde2 == null || hasta2 == null) {\n    node.warn(\"Faltan fechas\");\n    return null;\n}\n\nfunction convertirFecha(ts) {\n\n    let d = new Date(Number(ts));\n\n    // Compensar GMT-3\n    d.setHours(d.getHours() + 3);\n\n    let anio = d.getFullYear();\n    let mes = String(d.getMonth() + 1).padStart(2, \"0\");\n    let dia = String(d.getDate()).padStart(2, \"0\");\n\n    let hora = String(d.getHours()).padStart(2, \"0\");\n    let min = String(d.getMinutes()).padStart(2, \"0\");\n    let seg = String(d.getSeconds()).padStart(2, \"0\");\n\n    return `${anio}-${mes}-${dia} ${hora}:${min}:${seg}`;\n}\n\ndesde2 = convertirFecha(desde2);\nhasta2 = convertirFecha(hasta2);\n\nnode.warn({\n    desde2,\n    hasta2\n});\n\nmsg.topic = `\nSELECT\n    fecha,\n    temperatura,\n    sp_temp,\n    salida_pid_temperatura\nFROM historico_dinamico\nWHERE fecha BETWEEN '${desde2}' AND '${hasta2}'\nORDER BY fecha ASC\n`;\n\nnode.warn(msg.topic);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 1300,
+        "wires": [
+            [
+                "b9a5e57a98a8bdf6"
+            ]
+        ]
+    },
+    {
+        "id": "e736b43ad5a5486e",
+        "type": "ui_chart",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "5cc1fa82dc5843e8",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura Historico",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#f50000",
+            "#0fff13",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2400,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9a5e57a98a8bdf6",
+        "type": "mysql",
+        "z": "858835c4dddfb63d",
+        "mydb": "06f4107b69249e80",
+        "name": "",
+        "x": 2000,
+        "y": 1300,
+        "wires": [
+            [
+                "03944089c8af7fe3"
+            ]
+        ]
+    },
+    {
+        "id": "c5278210c1a74a4d",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "function 12",
+        "func": "if (msg.topic === \"desde2\") {\n    flow.set(\"desde2\", Number(msg.payload));\n    node.warn(\"Guardado desde2: \" + msg.payload);\n}\n\nif (msg.topic === \"hasta2\") {\n    flow.set(\"hasta2\", Number(msg.payload));\n    node.warn(\"Guardado hasta2: \" + msg.payload);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03944089c8af7fe3",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "function 13",
+        "func": "node.warn(msg.topic);\n\nlet data = msg.payload;\n\nlet temp = [];\nlet sp = [];\nlet salidaPIDTemp = [];\n\ndata.forEach(row => {\n    temp.push({ x: new Date(row.fecha), y: row.temperatura });\n    sp.push({ x: new Date(row.fecha), y: row.sp_temp });\n    salidaPIDTemp.push({ x: new Date(row.fecha), y: row.salida_pid_temperatura });\n});\n\nmsg.payload = [{\n    series: [\"Temperatura\", \"SP_Temp\", \"Salida_PID_temperatura\" ],\n    data: [temp, sp, salidaPIDTemp],\n    labels: []\n}];\nflow.set(\"ultimaGraficaTemp\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2190,
+        "y": 1300,
+        "wires": [
+            [
+                "e736b43ad5a5486e"
+            ]
+        ]
+    },
+    {
+        "id": "1a7517da60cc9af0",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Animaciones Temperatura",
+        "info": "",
+        "x": 1770,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "8714e2d2cd6a6d93",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "7d0321abdf5cb7cf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SP",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2110,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "0dd3af94065e8a88",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 1,
+        "group": "5cc1fa82dc5843e8",
+        "width": 0,
+        "height": 0,
+        "label": "PID Automatico",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2110,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "4f4a8e96ae3b658a",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 2,
+        "group": "5cc1fa82dc5843e8",
+        "width": 0,
+        "height": 0,
+        "label": "PID Manual",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2110,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "6a077ecb79929af2",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 3,
+        "group": "5cc1fa82dc5843e8",
+        "width": 0,
+        "height": 0,
+        "label": "PID Off",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2110,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "fc1c487b34e6fb8a",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "7d0321abdf5cb7cf",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ki",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2110,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "34430b8ebbb861bf",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "7d0321abdf5cb7cf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2110,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "c2c27b6a8aa8e4d8",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "7d0321abdf5cb7cf",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kd",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2110,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "5dfe51c66fc1156e",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Animaciones Nivel",
+        "info": "",
+        "x": 2450,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "432071af54f216a1",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "97567881833f53ab",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SP",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2930,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "4b94d29d3808917a",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 1,
+        "group": "5699fc037d295838",
+        "width": 0,
+        "height": 0,
+        "label": "PID Automatico",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2950,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "dc7d7a23d844f60d",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 2,
+        "group": "5699fc037d295838",
+        "width": 0,
+        "height": 0,
+        "label": "PID Manual",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2950,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "bd5b42267f25dcb8",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 3,
+        "group": "5699fc037d295838",
+        "width": 0,
+        "height": 0,
+        "label": "PID Off",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2950,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "3b44481fccb889aa",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "97567881833f53ab",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ki",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2930,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "7d5217a743336e0e",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "97567881833f53ab",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2930,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "8e9499168497400e",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "97567881833f53ab",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kd",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2930,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "530dff866510fd0d",
+        "type": "ui_gauge",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "07fc9370cc2492c9",
+        "order": 1,
+        "width": 7,
+        "height": 5,
+        "gtype": "wave",
+        "title": "Nivel",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 2930,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "04111bb74e43a85b",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 4,
+        "group": "5cc1fa82dc5843e8",
+        "width": 0,
+        "height": 0,
+        "label": "Cooler",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2110,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "27dfc95370cfd6b2",
+        "type": "ui_led",
+        "z": "858835c4dddfb63d",
+        "order": 5,
+        "group": "5cc1fa82dc5843e8",
+        "width": 0,
+        "height": 0,
+        "label": "Resistencias",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 2110,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "82f19b9a6adcd096",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Nodo S7 con Variables DB4",
+        "info": "",
+        "x": 1780,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "22a166aa76020685",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Nodo S7 con Variables DB4",
+        "info": "",
+        "x": 1640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f6eb1d479088f8bb",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Nodo base de datos",
+        "info": "",
+        "x": 2270,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "49d5f4b0469f3d5b",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Tiempo de muestreo",
+        "info": "",
+        "x": 1730,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "32f7095fcb28c4be",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Nodo base de datos",
+        "info": "",
+        "x": 2110,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "e4060557e2942548",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "Tiempo de muestreo",
+        "info": "",
+        "x": 1530,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d601c467f8526ed0",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Temperatura",
+        "diff": true,
+        "name": "",
+        "x": 1730,
+        "y": 1620,
+        "wires": [
+            [
+                "5714539f83bcb659"
+            ]
+        ]
+    },
+    {
+        "id": "5fe54f6d34fc9603",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "SP_Temp",
+        "diff": true,
+        "name": "",
+        "x": 1720,
+        "y": 1680,
+        "wires": [
+            [
+                "dc109317c8495e92"
+            ]
+        ]
+    },
+    {
+        "id": "f6985ba464ce4cb6",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Ki_Temp",
+        "diff": true,
+        "name": "",
+        "x": 1720,
+        "y": 1740,
+        "wires": [
+            [
+                "5df07b842840288e"
+            ]
+        ]
+    },
+    {
+        "id": "54ea79ee73c1b4c1",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Kp_Temp",
+        "diff": true,
+        "name": "",
+        "x": 1720,
+        "y": 1800,
+        "wires": [
+            [
+                "6014e1e63c638b20"
+            ]
+        ]
+    },
+    {
+        "id": "c471a7840e979fa3",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Kd_Temp",
+        "diff": true,
+        "name": "",
+        "x": 1720,
+        "y": 1860,
+        "wires": [
+            [
+                "e42a34370f4323d8"
+            ]
+        ]
+    },
+    {
+        "id": "f05e231d97493ad1",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Autotemp",
+        "diff": true,
+        "name": "",
+        "x": 1860,
+        "y": 2020,
+        "wires": [
+            [
+                "0dd3af94065e8a88"
+            ]
+        ]
+    },
+    {
+        "id": "6cd1e9bc3321d586",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Luz_PID_Man_temp_html",
+        "diff": true,
+        "name": "",
+        "x": 1910,
+        "y": 2080,
+        "wires": [
+            [
+                "4f4a8e96ae3b658a"
+            ]
+        ]
+    },
+    {
+        "id": "c2f3d33b3c8c58bc",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "PIDTempOFF",
+        "diff": true,
+        "name": "",
+        "x": 1850,
+        "y": 2160,
+        "wires": [
+            [
+                "6a077ecb79929af2"
+            ]
+        ]
+    },
+    {
+        "id": "336b718ec723fbe0",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Cooler",
+        "diff": true,
+        "name": "",
+        "x": 1850,
+        "y": 2220,
+        "wires": [
+            [
+                "04111bb74e43a85b"
+            ]
+        ]
+    },
+    {
+        "id": "6694b473b4ca708d",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Resistencia",
+        "diff": true,
+        "name": "",
+        "x": 1870,
+        "y": 2280,
+        "wires": [
+            [
+                "27dfc95370cfd6b2"
+            ]
+        ]
+    },
+    {
+        "id": "1c6d05b8ae88a333",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Nivel",
+        "diff": true,
+        "name": "",
+        "x": 2430,
+        "y": 1620,
+        "wires": [
+            [
+                "065157c3d9291113"
+            ]
+        ]
+    },
+    {
+        "id": "efc6da0682bde855",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "SP_Nivel",
+        "diff": true,
+        "name": "",
+        "x": 2420,
+        "y": 1740,
+        "wires": [
+            [
+                "432071af54f216a1"
+            ]
+        ]
+    },
+    {
+        "id": "7061ed6bc35db9fd",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Ki_Nivel",
+        "diff": true,
+        "name": "",
+        "x": 2420,
+        "y": 1800,
+        "wires": [
+            [
+                "2e86f2b732fadb04"
+            ]
+        ]
+    },
+    {
+        "id": "a154ee443a601d76",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Kp_Nivel",
+        "diff": true,
+        "name": "",
+        "x": 2420,
+        "y": 1860,
+        "wires": [
+            [
+                "3e88713adcb8b1f5"
+            ]
+        ]
+    },
+    {
+        "id": "3c90f14be9a0e7a0",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Kd_Nivel",
+        "diff": true,
+        "name": "",
+        "x": 2420,
+        "y": 1920,
+        "wires": [
+            [
+                "8e9499168497400e"
+            ]
+        ]
+    },
+    {
+        "id": "28d49b1e59fd5664",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "NivelAuto",
+        "diff": true,
+        "name": "",
+        "x": 2420,
+        "y": 2140,
+        "wires": [
+            [
+                "4b94d29d3808917a"
+            ]
+        ]
+    },
+    {
+        "id": "408235ad4c5c3a32",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Luz_PID_Man_Niv_html",
+        "diff": true,
+        "name": "",
+        "x": 2470,
+        "y": 2200,
+        "wires": [
+            [
+                "dc7d7a23d844f60d"
+            ]
+        ]
+    },
+    {
+        "id": "2276f4fbee60b2f8",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "PIDNivelOFF",
+        "diff": true,
+        "name": "",
+        "x": 2430,
+        "y": 2280,
+        "wires": [
+            [
+                "bd5b42267f25dcb8"
+            ]
+        ]
+    },
+    {
+        "id": "2a31fe2df7bf1038",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Caudal",
+        "diff": true,
+        "name": "",
+        "x": 2430,
+        "y": 1680,
+        "wires": [
+            [
+                "906ab545f5766108"
+            ]
+        ]
+    },
+    {
+        "id": "http_in_panel",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "HTML PANEL",
+        "url": "/panel",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3810,
+        "y": 160,
+        "wires": [
+            [
+                "template_panel"
+            ]
+        ]
+    },
+    {
+        "id": "template_panel",
+        "type": "template",
+        "z": "858835c4dddfb63d",
+        "name": "SCADA HTML",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "plain",
+        "template": "<!DOCTYPE html>\n<html>\n\n<head>\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <title>SCADA</title>\n\n    <style>\n        body {\n            background: #111;\n            color: #00ff9c;\n            font-family: Arial;\n            margin: 0;\n            padding: 10px;\n        }\n        .contenedor-rejilla {\n        display: grid;\n        grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas iguales */\n        grid-template-rows: repeat(4, 1fr); /* Crea 4 filas iguales */\n        gap: 10px;\n        height: 100vh; /* Opcional: hace que la rejilla ocupe toda la altura de la pantalla */\n        }\n\n        .topbar {\n            border: 2px solid #00ff9c;\n            border-radius: 10px;\n            padding: 15px;\n            margin-bottom: 10px;\n            grid-row: 1;\n            grid-column: 1;\n        }\n\n        .main {\n            display: grid;\n            gap: 10px;\n\n        }\n\n        .izq {\n            border: 2px solid #00ff9c;\n            border-radius: 10px;\n            padding: 15px;\n            grid-row: 4; \n            grid-column: 1;\n\n        }\n        .der {\n        border: 2px solid #00ff9c;\n        border-radius: 10px;\n        padding: 15px;\n        grid-row: 4; \n        grid-column: 2;\n        \n        }\n\n        h1,\n        h2,\n        h3 {\n            margin-top: 0;\n        }\n\n        button {\n            width: 170px;\n            height: 55px;\n            font-size: 18px;\n            background: #00aa66;\n            color: white;\n            border: none;\n            border-radius: 10px;\n            margin: 4px;\n            cursor: pointer;\n        }\n\n        .stop {\n            background: red;\n        }\n\n        input {\n            width: 120px;\n            height: 40px;\n            font-size: 20px;\n            margin: 5px;\n            text-align: center;\n            border-radius: 8px;\n            border: none;\n        }\n\n        .valor {\n            font-size: 24px;\n            margin: 10px 0;\n\n        }\n        .section11 {\n            border: 2px solid #00ff9c;\n            border-radius: 10px;\n            padding: 15px;\n            grid-row: 2;\n            grid-column: 1;\n        }\n\n        .section21 {\n            border: 2px solid #00ff9c;\n            border-radius: 10px;\n            padding: 15px;\n            grid-row: 3;\n            grid-column: 1;\n        }\n\n        .section22 {\n            border: 2px solid #00ff9c;\n            border-radius: 10px;\n            padding: 15px;\n            grid-row: 3;\n            grid-column: 2;\n        }\n\n        .led {\n            display: inline-block;\n            width: 16px;\n            height: 16px;\n            border-radius: 50%;\n            background: #333;\n            margin-left: 10px;\n            border: 1px solid #666;\n\n        }\n\n        .on {\n            background: #00ff00;\n            box-shadow: 0 0 10px #00ff00;\n        }\n\n        .alarm {\n            color: red;\n            font-weight: bold;\n            font-size: 24px;\n            margin: 10px;\n\n\n        }\n\n\n\n        @media(max-width:900px) {\n\n\n\n            button {\n                width: 100%;\n            }\n\n            input {\n                width: 95%;\n            }\n\n        }\n    </style>\n\n</head>\n\n<body>\n\n                 <div class=\"topbar\">\n\n                    <h1>SCADA</h1>\n\n                    <button onclick=\"sendControlHTML(1)\">\n                    HTML ON\n                    </button>\n\n                    <button class=\"stop\" onclick=\"sendControlHTML(0)\">\n                        HTML OFF\n                    </button>\n\n                    <button onclick=\"sendEncendido(1)\">\n                        ENCENDIDO\n                        </button>\n                    <button class=\"stop\" onclick=\"sendEncendido(0)\">\n                        APAGADO\n                        </button>\n\n                    <button class=\"stop\" onclick=\"sendParo(0)\">\n                        PARO GENERAL\n                        </button>\n        \n                    <button  onclick=\"sendParo(1)\">\n                        RESET PARO\n                        </button>\n\n                    <button onclick=\"sendModo(0)\">\n                            Nivel\n                        </button>\n        \n                    <button class=\"stop\" onclick=\"sendModo(1)\">\n                            Temperatura\n                        </button>\n\n                        <div class=\"valor\">\n                            Nivel\n                            <span id=\"Luz_nivel\" class=\"led\"></span>\n                        </div>\n\n                        <div class=\"valor\">\n                            Temperatura\n                            <span id=\"Luz_temperatura\" class=\"led\"></span>\n                        </div>\n                </div>\n\n                    <div class=\"section11\">\n\n                        <div class=\"valor\">\n                            TEMP:\n                            <span id=\"Temperatura_html\">--</span>\n                        </div>\n\n                        <div class=\"valor\">\n                            NIVEL:\n                            <span id=\"Nivel_html\">--</span>\n                        </div>\n\n                        <div class=\"valor\">\n                            PRESION AGUA:\n                            <span id=\"PresionAgua_html\">--</span>\n                        </div>\n\n                        <div class=\"valor\">\n                            PRESION AIRE:\n                            <span id=\"PresionAire_html\">--</span>\n                        </div>\n\n                        <div class=\"valor\">\n                            CAUDAL:\n                            <span id=\"Caudal_html\">--</span>\n                        </div>\n\n                    </div>\n\n                    <div class=\"section21\">\n\n                        <h2>ESTADOS</h2>\n\n                        <div class=\"valor\">\n                            ENLACE:\n                            <span id=\"Confirmacion_HTML_led\" ></span>\n                        </div>\n\n                        <div class=\"valor\">\n                            KM1\n                            <span id=\"Confirmacion_km1_led\" class=\"led\"></span>\n                        </div>\n\n                        <div class=\"valor\">\n                            MB01\n                            <span id=\"Luz_mb_001_led\" class=\"led\"></span>\n                        </div>\n\n                        <div class=\"valor\">\n                            MB02\n                            <span id=\"Luz_mb_002_led\" class=\"led\"></span>\n                        </div>\n\n                        <div class=\"valor\">\n                            COOLER\n                            <span id=\"Luz_cool_led\" class=\"led\"></span>\n                        </div>\n\n                        <div class=\"valor\">\n                            RESISTENCIA\n                            <span id=\"Luz_res_led\" class=\"led\"></span>\n                        </div>\n\n                    </div>\n\n                    <div class=\"section22\">\n\n                        <h2>ALARMAS</h2>\n                    <div class=\"valor\">\n                        RESET ALARMAS\n                        <span id=\"Luz_reset_alarmas\" class=\"led\"></span>\n                    </div>\n\n                    <button class=\"stop\" onclick=\"sendResetAlarm()\">\n                        RESET ALARMAS\n                    </button>\n\n\n                        <div class=\"alarm\">\n                            PARO EMERGENCIA:\n                            <span id=\"AlarmaParo_html\">--</span>\n                        </div>\n\n                        <div class=\"alarm\">\n                            NIVEL ALTO ALTO:\n                            <span id=\"alarma_nivel_alto_alto\">--</span>\n                        </div>\n\n                        <div class=\"alarm\">\n                            TEMPERATURA ALTA:\n                            <span id=\"alarma_temperatura_alta\">--</span>\n                        </div>\n\n                        <div class=\"alarm\">\n                            AIRE BAJO:\n                            <span id=\"alarma_aire_bajo\">--</span>\n                        </div>\n\n                        <div class=\"alarm\">\n                            NIVEL ALTO:\n                            <span id=\"alarma_nivel_alto\">--</span>\n                        </div>\n\n                    </div>\n\n\n\n    <div class=\"main\">\n    \n        <!-- ================================= -->\n        <!-- NIVEL -->\n        <!-- ================================= -->\n    \n        <div class=\"izq\">\n    \n            <h2>CONTROL NIVEL</h2>\n    \n            <div class=\"valor\">\n                NIVEL ACTUAL:\n                <span id=\"Nivel_html2\">--</span>\n            </div>\n    \n            <!-- SETPOINT -->\n    \n            <div class=\"section\">\n    \n                <h3>SETPOINT NIVEL</h3>\n    \n                <div class=\"valor\">\n                    SP ACTUAL:\n                    <span id=\"SP_Niv_html\">--</span>\n                </div>\n    \n                <input id=\"spNivel\" type=\"text\" inputmode=\"decimal\">\n    \n                <button onclick=\"sendSPNivel()\">\n                    ENVIAR SP\n                </button>\n    \n            </div>\n    \n            <!-- PID -->\n    \n            <div class=\"section\">\n            \n                <h3>PID NIVEL</h3>\n            \n                <div class=\"valor\">\n                    KP:\n                    <span id=\"Kp_Nivel_html\">--</span>\n                </div>\n            \n                <div class=\"valor\">\n                    KI:\n                    <span id=\"Ki_Nivel_html\">--</span>\n                </div>\n            \n                <div class=\"valor\">\n                    KD:\n                    <span id=\"Kd_Nivel_html\">--</span>\n                </div>\n            \n                <hr>\n            \n                <input id=\"kpNivel\" type=\"text\" placeholder=\"Nuevo KP\">\n                <input id=\"kiNivel\" type=\"text\" placeholder=\"Nuevo KI\">\n                <input id=\"kdNivel\" type=\"text\" placeholder=\"Nuevo KD\">\n            \n                <br>\n            \n                <button onclick=\"sendPIDNivel()\">\n                    ENVIAR PID\n                </button>\n            \n            \n    \n                <button class=\"stop\" onclick=\"sendPIDNivelOFF(1)\">\n                    PID OFF\n                </button>\n\n\n\n                <button onclick=\"sendPIDNivelOFF(0)\">\n                    PID ON\n                </button>\n               \n                <div class=\"valor\">\n                    off\n                    <span id=\"Luz_pid_off_niv\" class=\"led\"></span>\n                </div>\n                \n            \n                \n            </div>\n    \n            <!-- MODO NIVEL -->\n    \n            <div class=\"section\">\n    \n                <h3>MODO NIVEL</h3>\n    \n                <button onclick=\"sendNivModo(1)\">\n                    AUTO\n                </button>\n    \n                <button class=\"stop\" onclick=\"sendNivModo(0)\">\n                    MANUAL\n                </button>\n\n                <div class=\"valor\">\n                    automático\n                    <span id=\"Luz_pid_auto_niv\" class=\"led\"></span>\n                </div>\n                \n    \n            </div>\n    \n            <!-- SALIDA PID -->\n    \n            <div class=\"section\">\n    \n                <h3>SALIDA PID %</h3>\n    \n                <div class=\"valor\">\n                    % :\n                    <span id=\"Salida_PID_Nivel\">--</span>\n                </div>\n    \n                <input id=\"send_PID_niv\" type=\"text\" inputmode=\"decimal\">\n    \n                <button onclick=\"salidaPIDMan1()\">\n                    ENVIAR %\n                </button>\n    \n            </div>\n    \n        </div>\n    \n        <!-- ================================= -->\n        <!-- TEMPERATURA -->\n        <!-- ================================= -->\n    \n        <div class=\"der\">\n    \n            <h2>CONTROL TEMPERATURA</h2>\n    \n            <div class=\"valor\">\n                TEMP ACTUAL:\n                <span id=\"Temperatura_html2\">--</span>\n            </div>\n    \n            <!-- SETPOINT -->\n    \n            <div class=\"section\">\n    \n                <h3>SETPOINT TEMP</h3>\n    \n                <div class=\"valor\">\n                    SP ACTUAL:\n                    <span id=\"SP_Temp_html\">--</span>\n                </div>\n    \n                <input id=\"spTemp\" type=\"text\" inputmode=\"decimal\">\n    \n                <button onclick=\"sendSPTemp()\">\n                    ENVIAR SP\n                </button>\n    \n            </div>\n    \n            <!-- PID -->\n    \n            <div class=\"section\">\n            \n                <h3>PID TEMPERATURA</h3>\n            \n                <div class=\"valor\">\n                    KP:\n                    <span id=\"Kp_Temp_html\">--</span>\n                </div>\n            \n                <div class=\"valor\">\n                    KI:\n                    <span id=\"Ki_Temp_html\">--</span>\n                </div>\n            \n                <div class=\"valor\">\n                    KD:\n                    <span id=\"Kd_Temp_html\">--</span>\n                </div>\n            \n                <hr>\n            \n                <input id=\"kpTemp\" type=\"text\" placeholder=\"Nuevo KP\">\n                <input id=\"kiTemp\" type=\"text\" placeholder=\"Nuevo KI\">\n                <input id=\"kdTemp\" type=\"text\" placeholder=\"Nuevo KD\">\n            \n                <br>\n            \n                <button onclick=\"sendPIDTemp()\">\n                    ENVIAR PID\n                </button>\n            \n            \n    \n                <button class=\"stop\" onclick=\"sendPIDTempOFF(1)\">\n                    PID OFF\n                </button>\n    \n                <button onclick=\"sendPIDTempOFF(0)\">\n                    PID ON\n                </button>\n                \n                <div class=\"valor\">\n                    off\n                    <span id=\"Luz_pid_off_temp\" class=\"led\"></span>\n                </div>\n                \n                \n    \n            </div>\n    \n            <!-- MODO -->\n    \n            <div class=\"section\">\n    \n                <h3>MODO TEMP</h3>\n    \n                <button onclick=\"sendTempModo(1)\">\n                    AUTO\n                </button>\n    \n                <button class=\"stop\" onclick=\"sendTempModo(0)\">\n                    MANUAL\n                </button>\n               \n                <div class=\"valor\">\n                    automático\n                    <span id=\"Luz_pid_auto_temp\" class=\"led\"></span>\n                </div>\n                \n    \n            </div>\n    \n            <!-- SALIDA PID -->\n    \n            <div class=\"section\">\n    \n                <h3>SALIDA PID %</h3>\n    \n                <div class=\"valor\">\n                    % :\n                    <span id=\"Salida_PID_temperatura\">--</span>\n                </div>\n    \n                <input id=\"send_PID_temp\" type=\"text\" inputmode=\"decimal\">\n    \n                <button onclick=\"salidaPIDMan()\">\n                    ENVIAR %\n                </button>\n    \n            </div>\n    \n        </div>\n    \n    </div>\n\n    <script>\n        function post(url, obj) {\n\n            var x = new XMLHttpRequest();\n\n            x.open('POST', url, true);\n\n            x.setRequestHeader(\n                'Content-Type',\n                'application/json'\n            );\n\n            x.send(JSON.stringify(obj));\n\n        }\n\n        //\n        // CONTROL GENERAL\n        //\n\n        function sendControlHTML(v) {\n\n            post('/setcontrolhtml', {\n                ControlHTML: v\n            });\n\n        }\n\n        function sendEncendido(v) {\n\n            post('/setencendido', {\n                EncendidoGeneral: v\n            });\n\n        }\n\n        function sendParo(v) {\n        \n        post('/setparo', {\n        Boton_paro_html: v\n        });\n        \n        }\n\n        function sendModo(v) {\n        \n        post('/sendModo', {\n        SendModo: v\n        });\n        \n        }\n\n        //\n        // SETPOINTS\n        //\n\n        function sendSPTemp() {\n\n            post('/setsptemp', {\n\n                SP_Temp: parseFloat(\n                    document.getElementById('spTemp').value.replace(\",\", \".\")\n                )\n\n            });\n\n        }\n\n        function sendSPNivel() {\n\n            post('/setspnivel', {\n\n                SP_Nivel: parseFloat(\n                    document.getElementById('spNivel').value.replace(\",\", \".\")\n                )\n\n            });\n\n        }\n\n        //\n        // SALIDA PID MANUAL\n        //\n\n        function salidaPIDMan() {\n\n            post('/send_PID_temp', {\n\n                Send_PID_temp: parseFloat(\n                    document.getElementById('send_PID_temp').value.replace(\",\", \".\")\n                )\n\n            });\n\n        }\n        function salidaPIDMan1() {\n        \n        post('/send_PID_niv', {\n        \n        Send_PID_niv: parseFloat(\n        document.getElementById('send_PID_niv').value.replace(\",\", \".\")\n        )\n        \n        });\n        \n        }\n        //\n        // PID TEMP\n        //\n\n        function sendPIDTemp() {\n\n            post('/setpidtemp', {\n\n                Kp_Temp: parseFloat(\n                    document.getElementById('kpTemp').value.replace(\",\", \".\")\n                ),\n\n                Ki_Temp: parseFloat(\n                    document.getElementById('kiTemp').value.replace(\",\", \".\")\n                ),\n\n                Kd_Temp: parseFloat(\n                    document.getElementById('kdTemp').value.replace(\",\", \".\")\n                )\n\n            });\n\n        }\n\n        //\n        // PID NIVEL\n        //\n\n        function sendPIDNivel() {\n\n            post('/setpidnivel', {\n\n                Kp_Nivel: parseFloat(\n                    document.getElementById('kpNivel').value.replace(\",\", \".\")\n                ),\n\n                Ki_Nivel: parseFloat(\n                    document.getElementById('kiNivel').value.replace(\",\", \".\")\n                ),\n\n                Kd_Nivel: parseFloat(\n                    document.getElementById('kdNivel').value.replace(\",\", \".\")\n                )\n\n            });\n\n        }\n\n        //\n        // PID OFF\n        //\n\n        function sendPIDTempOFF(v) {\n\n            post('/setpidtempoff', {\n                PIDTempOFF: v\n            });\n\n        }\n\n        function sendPIDNivelOFF(v) {\n\n            post('/setpidniveloff', {\n                PIDNivelOFF: v\n            });\n\n        }\n\n        //\n        // MODOS\n        //\n        function sendResetAlarm() {\n        \n        // Enviar 1\n        post('/sendResetAlarm', {\n        SendResetAlarm: 1\n        });\n        \n        // Después de 200 ms volver a 0\n        setTimeout(function () {\n        \n        post('/sendResetAlarm', {\n        SendResetAlarm: 0\n        });\n        \n        }, 300);\n        \n        }\n        \n        function sendTempModo(v) {\n\n            post('/settempmodo', {\n\n                TempModo: v\n\n            });\n\n        }\n\n        function sendNivModo(v) {\n\n            post('/setnivmodo', {\n\n                NivModo: v\n\n            });\n\n        }\n\n\n        //\n        // LEDS\n        //\n\n        function setLed(id, estado) {\n\n            var led = document.getElementById(id);\n\n            if (estado) {\n\n                led.classList.add(\"on\");\n\n            } else {\n\n                led.classList.remove(\"on\");\n\n            }\n\n        }\n\n        //\n        // UPDATE\n        //\n\n\nfunction update() {\n\n    function f2(v) {\n    return (v == null) ? \"--\" : Number(v).toFixed(2);\n    }\n    var x = new XMLHttpRequest();\n\n    x.open('GET', '/datos', true);\n\n    x.timeout = 3000;\n\n    x.onreadystatechange = function () {\n\n        if (x.readyState == 4 && x.status == 200) {\n\n            try {\n\n                var d = JSON.parse(x.responseText);\n\n                //\n                // VARIABLES\n                //\n\n                document.getElementById('Temperatura_html').innerHTML =\n                    d.Temperatura_html ?? \"--\";\n\n                document.getElementById('Temperatura_html2').innerHTML =\n                    d.Temperatura_html ?? \"--\";\n\n                document.getElementById('Nivel_html').innerHTML =\n                    d.Nivel_html ?? \"--\";\n\n                document.getElementById('Nivel_html2').innerHTML =\n                    d.Nivel_html ?? \"--\";\n\n                document.getElementById('PresionAgua_html').innerHTML =\n                    d.PresionAgua_html ?? \"--\";\n\n                document.getElementById('PresionAire_html').innerHTML =\n                    d.PresionAire_html ?? \"--\";\n\n                document.getElementById('Caudal_html').innerHTML =\n                    d.Caudal_html ?? \"--\";\n\n                document.getElementById('SP_Temp_html').innerHTML =\n                    d.SP_Temp_html ?? \"--\";\n\n                document.getElementById('SP_Niv_html').innerHTML =\n                    d.SP_Niv_html ?? \"--\";\n\n                document.getElementById('Kp_Nivel_html').innerHTML = f2(d.Kp_Nivel_html);\n                document.getElementById('Ki_Nivel_html').innerHTML = f2(d.Ki_Nivel_html);\n                document.getElementById('Kd_Nivel_html').innerHTML = f2(d.Kd_Nivel_html);\n                \n                document.getElementById('Kp_Temp_html').innerHTML = f2(d.Kp_Temp_html);\n                document.getElementById('Ki_Temp_html').innerHTML = f2(d.Ki_Temp_html);\n                document.getElementById('Kd_Temp_html').innerHTML = f2(d.Kd_Temp_html);\n\n                //\n                // SALIDAS PID\n                //\n\n                document.getElementById('Salida_PID_temperatura').innerHTML =\n                    d.Salida_PID_temperatura ?? \"--\";\n\n                document.getElementById('Salida_PID_Nivel').innerHTML =\n                    d.Salida_PID_Nivel ?? \"--\";\n\n                //\n                // LEDS\n                //\n\n                setLed(\"Confirmacion_km1_led\", d.ConfirmacionKM1);\n\n\n                setLed(\"Luz_mb_001_led\", d.MB001);\n\n                setLed(\"Luz_mb_002_led\", d.MB002);\n\n                setLed(\"Luz_nivel\", d.Eleccion_proceso_html == 0);\n\n                setLed(\"Luz_temperatura\", d.Eleccion_proceso_html);\n\n                setLed(\"Luz_pid_off_niv\", d.PIDNivelOFF);\n\n                setLed(\"Luz_pid_off_temp\", d.PIDTempOFF);\n\n                setLed(\"Luz_pid_auto_temp\", d.Autotemp);\n\n                setLed(\"Luz_pid_auto_niv\", d.Autoniv);\n\n                setLed(\"Luz_cool_led\", d.Cooler);\n\n                setLed(\"Luz_res_led\", d.Resistencia);\n\n                setLed(\"Luz_reset_alarmas\", d.SendResetAlarm);\n\n                //\n                // ALARMAS\n                //\n                document.getElementById('Confirmacion_HTML_led').innerHTML =\n                d.Confirmacion_HTML_led ? \"DESCONECTADO\" : \"CONECTADO\";\n\n                document.getElementById('AlarmaParo_html').innerHTML =\n                d.AlarmaParo_html ? \"ACTIVA\" : \"NORMAL\";            \n\n\n                document.getElementById('alarma_nivel_alto_alto').innerHTML =\n                    d.AlarmaNivelAA_html ? \"ACTIVA\" : \"NORMAL\";\n\n                document.getElementById('alarma_temperatura_alta').innerHTML =\n                    d.AlarmaTempAlta_html ? \"ACTIVA\" : \"NORMAL\";\n\n                document.getElementById('alarma_aire_bajo').innerHTML =\n                    d.AlarmaPresionAireBaja_html ? \"ACTIVA\" : \"NORMAL\";\n\n                document.getElementById('alarma_nivel_alto').innerHTML =\n                    d.AlarmaNivelAlto_html ? \"ACTIVA\" : \"NORMAL\";\n\n            } catch (e) {\n\n                console.log(\"ERROR JSON:\", e);\n\n            }\n\n        }\n\n    };\n\n    x.onerror = function () {\n\n        console.log(\"ERROR AJAX\");\n\n    };\n\n    x.ontimeout = function () {\n\n        console.log(\"TIMEOUT\");\n\n    };\n\n    x.send();\n\n}\n\n        setInterval(update, 2000);\n\n        update();\n\n    </script>\n\n</body>\n\n</html>",
+        "output": "str",
+        "x": 4030,
+        "y": 160,
+        "wires": [
+            [
+                "http_response_panel",
+                "ce1ddbcfb57fd7ae"
+            ]
+        ]
+    },
+    {
+        "id": "http_response_panel",
+        "type": "http response",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 4270,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "http_in_setparo",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SET PARO",
+        "url": "/setparo",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3810,
+        "y": 280,
+        "wires": [
+            [
+                "json_paro"
+            ]
+        ]
+    },
+    {
+        "id": "json_paro",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.setparo",
+        "action": "",
+        "pretty": false,
+        "x": 3990,
+        "y": 280,
+        "wires": [
+            [
+                "func_paro"
+            ]
+        ]
+    },
+    {
+        "id": "func_paro",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,X46.4",
+        "func": "msg.topic = \"DB17.DBX46.4\";\n\nmsg.payload = Number(msg.payload.Boton_paro_html);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4210,
+        "y": 280,
+        "wires": [
+            [
+                "s7_out"
+            ]
+        ]
+    },
+    {
+        "id": "s7_out",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Boton_paro_html",
+        "name": "PLC WRITE",
+        "x": 4450,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7f20fa23b4dfefa8",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "control por html",
+        "url": "/setcontrolhtml",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3810,
+        "y": 360,
+        "wires": [
+            [
+                "e05b5e773254e218"
+            ]
+        ]
+    },
+    {
+        "id": "e05b5e773254e218",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.ControlHTML",
+        "action": "",
+        "pretty": false,
+        "x": 4010,
+        "y": 360,
+        "wires": [
+            [
+                "53ffec70f1721228"
+            ]
+        ]
+    },
+    {
+        "id": "53ffec70f1721228",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,X82.0",
+        "func": "msg.topic = \"DB17.DBX82.0\";\n\nmsg.payload = Number(msg.payload.ControlHTML);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4230,
+        "y": 360,
+        "wires": [
+            [
+                "8f47f7f5e3476cb0"
+            ]
+        ]
+    },
+    {
+        "id": "8f47f7f5e3476cb0",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Boton_html",
+        "name": "PLC WRITE",
+        "x": 4470,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f2c8fa4d5c2dffc2",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SET SP TEMP",
+        "url": "/setsptemp",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 5000,
+        "y": 660,
+        "wires": [
+            [
+                "de6ae24546d2cc29"
+            ]
+        ]
+    },
+    {
+        "id": "de6ae24546d2cc29",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.valor",
+        "action": "",
+        "pretty": false,
+        "x": 5160,
+        "y": 660,
+        "wires": [
+            [
+                "9c7399de4c971b67"
+            ]
+        ]
+    },
+    {
+        "id": "9c7399de4c971b67",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB19,DBD16",
+        "func": "msg.topic = \"DB17.DBD76\";\n\nmsg.payload = Number(msg.payload.SP_Temp);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5380,
+        "y": 660,
+        "wires": [
+            [
+                "892750064be2856f"
+            ]
+        ]
+    },
+    {
+        "id": "892750064be2856f",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "SETPOINT_TEMPERATURA",
+        "name": "PLC WRITE",
+        "x": 5620,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "8c3e27f3e1f830ad",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SET SP NIVEL",
+        "url": "/setspnivel",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3810,
+        "y": 660,
+        "wires": [
+            [
+                "f2d3290a6892a9f0"
+            ]
+        ]
+    },
+    {
+        "id": "f2d3290a6892a9f0",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.valor",
+        "action": "",
+        "pretty": false,
+        "x": 3970,
+        "y": 660,
+        "wires": [
+            [
+                "428e6105bed8534e"
+            ]
+        ]
+    },
+    {
+        "id": "428e6105bed8534e",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB19,DBD12",
+        "func": "msg.topic = \"DB19.DBD12\";\n\nmsg.payload = Number(msg.payload.SP_Nivel);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4190,
+        "y": 660,
+        "wires": [
+            [
+                "f21a4820f877d29a"
+            ]
+        ]
+    },
+    {
+        "id": "f21a4820f877d29a",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "SETPOINT_NIVEL",
+        "name": "PLC WRITE",
+        "x": 4430,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "063d0b44cc5677e2",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SET nivel auto",
+        "url": "/setnivmodo",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3810,
+        "y": 740,
+        "wires": [
+            [
+                "5a6e80a884ea1f11"
+            ]
+        ]
+    },
+    {
+        "id": "5a6e80a884ea1f11",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.nivelauto",
+        "action": "",
+        "pretty": false,
+        "x": 3970,
+        "y": 740,
+        "wires": [
+            [
+                "f1134a47b5530419"
+            ]
+        ]
+    },
+    {
+        "id": "f1134a47b5530419",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBX46.1",
+        "func": "msg.topic = \"DB17.DBX46.1\";\n\nmsg.payload = Number(msg.payload.NivModo);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4200,
+        "y": 740,
+        "wires": [
+            [
+                "cd7329d7b0183807"
+            ]
+        ]
+    },
+    {
+        "id": "cd7329d7b0183807",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Modo_PID_Nivel_html",
+        "name": "PLC WRITE",
+        "x": 4430,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "ae83f85d6a233417",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SET nivel off",
+        "url": "/setpidniveloff",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3810,
+        "y": 820,
+        "wires": [
+            [
+                "5e5b7b1104747b2f"
+            ]
+        ]
+    },
+    {
+        "id": "5e5b7b1104747b2f",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.niveloff",
+        "action": "",
+        "pretty": false,
+        "x": 3980,
+        "y": 820,
+        "wires": [
+            [
+                "4117832cd0ad4050"
+            ]
+        ]
+    },
+    {
+        "id": "4117832cd0ad4050",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17 DBX46.2",
+        "func": "msg.topic = \"DB17.DBX46.2\";\n\nmsg.payload = Number(msg.payload.PIDNivelOFF);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4210,
+        "y": 820,
+        "wires": [
+            [
+                "c607da17b7bf8234"
+            ]
+        ]
+    },
+    {
+        "id": "c607da17b7bf8234",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "PIDNivelOFF_html",
+        "name": "PLC WRITE",
+        "x": 4440,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "68609589b64b7904",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SET Temp auto",
+        "url": "/settempmodo",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 5000,
+        "y": 740,
+        "wires": [
+            [
+                "05e51c9188045579"
+            ]
+        ]
+    },
+    {
+        "id": "05e51c9188045579",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.settempmodo",
+        "action": "",
+        "pretty": false,
+        "x": 5160,
+        "y": 740,
+        "wires": [
+            [
+                "9448f9006648a38d"
+            ]
+        ]
+    },
+    {
+        "id": "9448f9006648a38d",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBX24.4",
+        "func": "msg.topic = \"DB17.DBX24.4\";\n\nmsg.payload = Number(msg.payload.TempModo);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5390,
+        "y": 740,
+        "wires": [
+            [
+                "50fd66c2a9078d12"
+            ]
+        ]
+    },
+    {
+        "id": "50fd66c2a9078d12",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Modo_PID_Temp_html",
+        "name": "PLC WRITE",
+        "x": 5620,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "32167f2cebc9ce87",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SET Temp off",
+        "url": "/setpidtempoff",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 5000,
+        "y": 820,
+        "wires": [
+            [
+                "9c02720be7924f8e"
+            ]
+        ]
+    },
+    {
+        "id": "9c02720be7924f8e",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.valor",
+        "action": "",
+        "pretty": false,
+        "x": 5170,
+        "y": 820,
+        "wires": [
+            [
+                "13dcd4a8323574a6"
+            ]
+        ]
+    },
+    {
+        "id": "13dcd4a8323574a6",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17 DBX24.5",
+        "func": "msg.topic = \"DB17.DBX24.5\";\n\nmsg.payload = Number(msg.payload.PIDTempOFF);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5400,
+        "y": 820,
+        "wires": [
+            [
+                "dde98f8505a72b9e"
+            ]
+        ]
+    },
+    {
+        "id": "dde98f8505a72b9e",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "PIDTempOFF_html",
+        "name": "PLC WRITE",
+        "x": 5630,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "935e62f313bed658",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "PID NIVEL ",
+        "url": "/setpidnivel",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3800,
+        "y": 920,
+        "wires": [
+            [
+                "9c23651164d6d36d",
+                "507b47dab284be59",
+                "7c4473d621508524"
+            ]
+        ]
+    },
+    {
+        "id": "9c23651164d6d36d",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.Kp_Nivel_html",
+        "action": "",
+        "pretty": false,
+        "x": 3980,
+        "y": 920,
+        "wires": [
+            [
+                "a8a73d1a2ba4d58d"
+            ]
+        ]
+    },
+    {
+        "id": "a8a73d1a2ba4d58d",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBX12",
+        "func": "msg.topic = \"DB17.DBD12\";\n\nmsg.payload = Number(msg.payload.Kp_Nivel);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4200,
+        "y": 920,
+        "wires": [
+            [
+                "2bb3a7af9f038478"
+            ]
+        ]
+    },
+    {
+        "id": "2bb3a7af9f038478",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Kp_Nivel_html",
+        "name": "PLC WRITE",
+        "x": 4440,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "507b47dab284be59",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.Ki_Nivel_html",
+        "action": "",
+        "pretty": false,
+        "x": 3980,
+        "y": 1000,
+        "wires": [
+            [
+                "59f00f9b259562b4"
+            ]
+        ]
+    },
+    {
+        "id": "59f00f9b259562b4",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBX8",
+        "func": "msg.topic = \"DB17.DBD8\";\n\nmsg.payload = Number(msg.payload.Ki_Nivel);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4200,
+        "y": 1000,
+        "wires": [
+            [
+                "91fc5a9b06e77085"
+            ]
+        ]
+    },
+    {
+        "id": "91fc5a9b06e77085",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Ki_Nivel_html",
+        "name": "PLC WRITE",
+        "x": 4440,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "7c4473d621508524",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.Kd_Temp_html",
+        "action": "",
+        "pretty": false,
+        "x": 3990,
+        "y": 1080,
+        "wires": [
+            [
+                "f36d29078b56d4b8"
+            ]
+        ]
+    },
+    {
+        "id": "f36d29078b56d4b8",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17 DBD16",
+        "func": "msg.topic = \"DB17.DBD16\";\n\nmsg.payload = Number(msg.payload.Kd_Nivel);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4210,
+        "y": 1080,
+        "wires": [
+            [
+                "fa933c05b19efc64"
+            ]
+        ]
+    },
+    {
+        "id": "fa933c05b19efc64",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Kd_Nivel_html",
+        "name": "PLC WRITE",
+        "x": 4450,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "1a3c687a26e18a78",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "PID TEMP",
+        "url": "/setpidtemp",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 4980,
+        "y": 920,
+        "wires": [
+            [
+                "44e40d9c24a00559",
+                "568d9eac417f6323",
+                "d8849f1088383ea7"
+            ]
+        ]
+    },
+    {
+        "id": "44e40d9c24a00559",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.Kp_Temp_html",
+        "action": "",
+        "pretty": false,
+        "x": 5160,
+        "y": 920,
+        "wires": [
+            [
+                "750fb3847cb56f5c"
+            ]
+        ]
+    },
+    {
+        "id": "750fb3847cb56f5c",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBD34",
+        "func": "msg.topic = \"DB17.DBD34\";\n\nmsg.payload = Number(msg.payload.Kp_Temp);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5380,
+        "y": 920,
+        "wires": [
+            [
+                "5936fb98d54bdd9f"
+            ]
+        ]
+    },
+    {
+        "id": "5936fb98d54bdd9f",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Kp_Temp_html",
+        "name": "PLC WRITE",
+        "x": 5620,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "568d9eac417f6323",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.Ki_Temp_html",
+        "action": "",
+        "pretty": false,
+        "x": 5160,
+        "y": 1000,
+        "wires": [
+            [
+                "e7f1c843856dca4a"
+            ]
+        ]
+    },
+    {
+        "id": "e7f1c843856dca4a",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBD30",
+        "func": "msg.topic = \"DB17.DBD30\";\n\nmsg.payload = Number(msg.payload.Ki_Temp);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5380,
+        "y": 1000,
+        "wires": [
+            [
+                "2b7592f9d2d9fcf6"
+            ]
+        ]
+    },
+    {
+        "id": "2b7592f9d2d9fcf6",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Ki_Temp_html",
+        "name": "PLC WRITE",
+        "x": 5620,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "d8849f1088383ea7",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.Kd_Temp_html",
+        "action": "",
+        "pretty": false,
+        "x": 5170,
+        "y": 1080,
+        "wires": [
+            [
+                "38790c980a376c25"
+            ]
+        ]
+    },
+    {
+        "id": "38790c980a376c25",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17 DBD38",
+        "func": "msg.topic = \"DB17.DBD38\";\n\nmsg.payload = Number(msg.payload.Kd_Temp);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5390,
+        "y": 1080,
+        "wires": [
+            [
+                "5e33f85699eea31b"
+            ]
+        ]
+    },
+    {
+        "id": "5e33f85699eea31b",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Kd_Temp_html",
+        "name": "PLC WRITE",
+        "x": 5630,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "5daf6077b53748fa",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "KM1",
+        "url": "/setencendido",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3810,
+        "y": 440,
+        "wires": [
+            [
+                "6d819cc72ad16289"
+            ]
+        ]
+    },
+    {
+        "id": "6d819cc72ad16289",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.encendido",
+        "action": "",
+        "pretty": false,
+        "x": 4000,
+        "y": 440,
+        "wires": [
+            [
+                "132aebdbac56c9d8"
+            ]
+        ]
+    },
+    {
+        "id": "132aebdbac56c9d8",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,X24.2",
+        "func": "msg.topic = \"DB17.DBX24.2\";\n\nmsg.payload = Number(msg.payload.EncendidoGeneral);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4220,
+        "y": 440,
+        "wires": [
+            [
+                "de12ebe5aface597"
+            ]
+        ]
+    },
+    {
+        "id": "de12ebe5aface597",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Alimentacion_KM1_html",
+        "name": "PLC WRITE",
+        "x": 4460,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7e7dcc1fb347e0e5",
+        "type": "comment",
+        "z": "858835c4dddfb63d",
+        "name": "HTML",
+        "info": "",
+        "x": 3670,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "53c5643d5c9fe9c9",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "Datos del plc ",
+        "url": "/datos",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 5010,
+        "y": 160,
+        "wires": [
+            [
+                "5e3447dbc885eeb3"
+            ]
+        ]
+    },
+    {
+        "id": "5e3447dbc885eeb3",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "indicadores",
+        "func": "msg.payload = {\n\n    //\n    // VARIABLES\n    //\n\n    Temperatura_html: flow.get(\"Temperatura_html\"),\n    Nivel_html: flow.get(\"Nivel_html\"),\n    PresionAgua_html: flow.get(\"PresionAgua_html\"),\n    PresionAire_html: flow.get(\"PresionAire_html\"),\n    Caudal_html: flow.get(\"Caudal_html\"),\n\n    SP_Temp_html: flow.get(\"SP_Temp_html\"),\n    SP_Niv_html: flow.get(\"SP_Niv_html\"),\n\n    Kp_Nivel_html: flow.get(\"Kp_Nivel\"),\n    Ki_Nivel_html: flow.get(\"Ki_Nivel\"),\n    Kd_Nivel_html: flow.get(\"Kd_Nivel\"),\n\n    Kp_Temp_html: flow.get(\"Kp_Temp\"),\n    Ki_Temp_html: flow.get(\"Ki_Temp\"),\n    Kd_Temp_html: flow.get(\"Kd_Temp\"),  \n\n    //\n    // PID\n    //\n\n    Salida_PID_temperatura:\n        flow.get(\"Salida_PID_temperatura\"),\n\n    Salida_PID_Nivel:\n        flow.get(\"Salida_PID_Nivel\"),\n\n    PIDNivelOFF:\n        flow.get(\"PIDNivelOFF\"),\n\n    PIDTempOFF:\n        flow.get(\"PIDTempOFF\"),\n    \n    Autoniv:\n        flow.get(\"Autoniv\"),\n\n    Autotemp:\n        flow.get(\"Autotemp\"),\n    //\n    // ESTADOS\n    //\n    Confirmacion_HTML_led:\n        flow.get(\"Confirmacion_HTML_led\"),\n\n    ConfirmacionKM1:\n        flow.get(\"ConfirmacionKM1\"),\n\n    MB001:\n        flow.get(\"MB001\"),\n\n    MB002:\n        flow.get(\"MB002\"),\n\n    Cooler:\n        flow.get(\"Cooler\"),\n\n    Resistencia:\n        flow.get(\"Resistencia\"),\n        \n    Eleccion_proceso_html:\n    flow.get(\"Eleccion_proceso_html\"),\n    //\n    // ALARMAS\n    //\n    SendResetAlarm:\n        flow.get(\"SendResetAlarm\"),\n\n    AlarmaParo_html:\n        flow.get(\"AlarmaParo_html\"),\n\n    AlarmaNivelAA_html:\n        flow.get(\"AlarmaNivelAA_html\"),\n\n    AlarmaTempAlta_html:\n        flow.get(\"AlarmaTempAlta_html\"),\n\n    AlarmaPresionAireBaja_html:\n        flow.get(\"AlarmaPresionAireBaja_html\"),\n\n    AlarmaNivelAlto_html:\n        flow.get(\"AlarmaNivelAlto_html\")\n\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5230,
+        "y": 160,
+        "wires": [
+            [
+                "1d43a224c0de62f5"
+            ]
+        ]
+    },
+    {
+        "id": "8bb8010ccfbf0243",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 5060,
+        "y": 240,
+        "wires": [
+            [
+                "bde2ab34014c7b25"
+            ]
+        ]
+    },
+    {
+        "id": "bde2ab34014c7b25",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "guardado de datos",
+        "func": "// =========================\n// VARIABLES ANALOGICAS\n// =========================\n\nflow.set(\n    \"Temperatura_html\",\n    Number(msg.payload.Temperatura).toFixed(2)\n);\n\nflow.set(\n    \"Nivel_html\",\n    Number(msg.payload.Nivel).toFixed(2)\n);\n\nflow.set(\n    \"PresionAgua_html\",\n    Number(msg.payload.PresionAgua).toFixed(2)\n);\n\nflow.set(\n    \"PresionAire_html\",\n    Number(msg.payload.PresionAire).toFixed(2)\n);\n\nflow.set(\n    \"Caudal_html\",\n    Number(msg.payload.Caudal).toFixed(2)\n);\n\nflow.set(\n    \"SP_Temp_html\",\n    Number(msg.payload.SP_Temp).toFixed(2)\n);\n\nflow.set(\n    \"SP_Niv_html\",\n    Number(msg.payload.SP_Nivel).toFixed(2)\n);\n\nflow.set(\n    \"Salida_PID_Nivel\",\n    Number(msg.payload.Salida_PID_Nivel).toFixed(2)\n);\n\nflow.set(\n    \"Salida_PID_temperatura\",\n    Number(msg.payload.Salida_PID_temperatura).toFixed(2)\n);\nflow.set(\"Kp_Nivel\", msg.payload.Kp_Nivel);\nflow.set(\"Ki_Nivel\", msg.payload.Ki_Nivel);\nflow.set(\"Kd_Nivel\", msg.payload.Kd_Nivel);\n\nflow.set(\"Kp_Temp\", msg.payload.Kp_Temp);\nflow.set(\"Ki_Temp\", msg.payload.Ki_Temp);\nflow.set(\"Kd_Temp\", msg.payload.Kd_Temp);\n// =========================\n// LUCES\n// =========================\n\nflow.set(\n    \"ConfirmacionKM1\",\n    msg.payload.ConfirmacionKM1\n);\n\nflow.set(\n    \"Confirmacion_HTML_led\",\n    msg.payload.Confirmacion_HTML_led\n);\n\nflow.set(\n    \"MB001\",\n    msg.payload.MB001\n);\n\nflow.set(\n    \"MB002\",\n    msg.payload.MB002\n);\n\nflow.set(\n    \"Luz_pres\",\n    msg.payload.Luz_pres\n);\n\nflow.set(\n    \"Cooler\",\n    msg.payload.Cooler\n);\n\nflow.set(\n    \"Luz_fv_des\",\n    msg.payload.Luz_fv_des\n);\n\nflow.set(\n    \"Resistencia\",\n    msg.payload.Resistencia\n);\n\nflow.set(\n    \"Luz_lsh_001\",\n    msg.payload.Luz_lsh_001\n);\n\nflow.set(\n    \"Luz_lsh_002\",\n    msg.payload.Luz_lsh_002\n);\n\nflow.set(\n    \"Luz_fv_3v\",\n    msg.payload.Luz_fv_3v\n);\n\nflow.set(\n    \"Luz_pid_man_temperatura\",\n    msg.payload.Luz_pid_man_temperatura\n);\n\nflow.set(\n    \"Luz_pid_auto_temperatura\",\n    msg.payload.Luz_pid_auto_temperatura\n);\n\nflow.set(\n    \"Luz_pid_off_temperatura\",\n    msg.payload.Luz_pid_off_temperatura\n);\n\nflow.set(\n    \"Luz_pid_man_nivel\",\n    msg.payload.Luz_pid_man_nivel\n);\n\nflow.set(\n    \"Luz_pid_auto_nivel\",\n    msg.payload.Luz_pid_auto_nivel\n);\n\nflow.set(\n    \"PIDNivelOFF\",\n    msg.payload.PIDNivelOFF\n);\nflow.set(\n    \"PIDTempOFF\",\n    msg.payload.PIDTempOFF\n);\n\nflow.set(\n    \"Autotemp\",\n    msg.payload.Autotemp\n);\n\nflow.set(\n    \"Autoniv\",\n    msg.payload.Autoniv\n);\n\nflow.set(\n    \"Eleccion_proceso_html\",\n    msg.payload.Eleccion_proceso_html\n);\n\n// =========================\n// ALARMAS\n// =========================\n\nflow.set(\n    \"SendResetAlarm\",\n    msg.payload.SendResetAlarm\n);\n\nflow.set(\n    \"AlarmaParo_html\",\n    msg.payload.AlarmaParo_html\n);\n\nflow.set(\n    \"AlarmaNivelAA_html\",\n    msg.payload.AlarmaNivelAA_html\n);\n\nflow.set(\n    \"AlarmaTempAlta_html\",\n    msg.payload.AlarmaTempAlta_html\n);\n\nflow.set(\n    \"AlarmaPresionAireBaja_html\",\n    msg.payload.AlarmaPresionAireBaja_html\n);\n\nflow.set(\n    \"AlarmaNivelAlto_html\",\n    msg.payload.AlarmaNivelAlto_html\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5330,
+        "y": 240,
+        "wires": [
+            [
+                "1885c3efe01e13c7"
+            ]
+        ]
+    },
+    {
+        "id": "1d43a224c0de62f5",
+        "type": "http response",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 5430,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5714539f83bcb659",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 1620,
+        "wires": [
+            [
+                "346dc6175970e240"
+            ]
+        ]
+    },
+    {
+        "id": "e25c8c4240ed7008",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "Proceso",
+        "url": "/sendModo",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3820,
+        "y": 500,
+        "wires": [
+            [
+                "30902dec4c9de223"
+            ]
+        ]
+    },
+    {
+        "id": "30902dec4c9de223",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.proceso",
+        "action": "",
+        "pretty": false,
+        "x": 4000,
+        "y": 500,
+        "wires": [
+            [
+                "9279f250c2f001f8"
+            ]
+        ]
+    },
+    {
+        "id": "9279f250c2f001f8",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,X24.1",
+        "func": "msg.topic = \"DB17.DBX24.1\";\n\nmsg.payload = Number(msg.payload.SendModo);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4220,
+        "y": 500,
+        "wires": [
+            [
+                "4010887712b655af"
+            ]
+        ]
+    },
+    {
+        "id": "4010887712b655af",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Eleccion_proceso_html",
+        "name": "PLC WRITE",
+        "x": 4460,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1885c3efe01e13c7",
+        "type": "debug",
+        "z": "858835c4dddfb63d",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 5560,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "065157c3d9291113",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2690,
+        "y": 1620,
+        "wires": [
+            [
+                "530dff866510fd0d"
+            ]
+        ]
+    },
+    {
+        "id": "2e86f2b732fadb04",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2650,
+        "y": 1800,
+        "wires": [
+            [
+                "3b44481fccb889aa"
+            ]
+        ]
+    },
+    {
+        "id": "3e88713adcb8b1f5",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2650,
+        "y": 1860,
+        "wires": [
+            [
+                "7d5217a743336e0e"
+            ]
+        ]
+    },
+    {
+        "id": "2e42ec7e53b629d9",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "7d0321abdf5cb7cf",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Salida PID %",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2150,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "0c58a37e14a31252",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Salida_PID_temperatura",
+        "diff": true,
+        "name": "",
+        "x": 1710,
+        "y": 1940,
+        "wires": [
+            [
+                "cf3ca68f1844c01e"
+            ]
+        ]
+    },
+    {
+        "id": "e9e1c98f350a81c8",
+        "type": "ui_text",
+        "z": "858835c4dddfb63d",
+        "group": "97567881833f53ab",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Salida PID %",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2890,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "a50572efc307aa0f",
+        "type": "s7 in",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "mode": "single",
+        "variable": "Salida_PID_Nivel",
+        "diff": true,
+        "name": "",
+        "x": 2420,
+        "y": 2000,
+        "wires": [
+            [
+                "a960c152cd9d0327"
+            ]
+        ]
+    },
+    {
+        "id": "cf3ca68f1844c01e",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(0);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 1940,
+        "wires": [
+            [
+                "2e42ec7e53b629d9"
+            ]
+        ]
+    },
+    {
+        "id": "a960c152cd9d0327",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(0);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2658.612548828125,
+        "y": 1999.8123779296875,
+        "wires": [
+            [
+                "e9e1c98f350a81c8"
+            ]
+        ]
+    },
+    {
+        "id": "dc109317c8495e92",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 1680,
+        "wires": [
+            [
+                "8714e2d2cd6a6d93"
+            ]
+        ]
+    },
+    {
+        "id": "5df07b842840288e",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 1740,
+        "wires": [
+            [
+                "fc1c487b34e6fb8a"
+            ]
+        ]
+    },
+    {
+        "id": "6014e1e63c638b20",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 1800,
+        "wires": [
+            [
+                "34430b8ebbb861bf"
+            ]
+        ]
+    },
+    {
+        "id": "e42a34370f4323d8",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 1860,
+        "wires": [
+            [
+                "c2c27b6a8aa8e4d8"
+            ]
+        ]
+    },
+    {
+        "id": "d91aaed0238c400d",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SALIDA MAN PID NIVEL ",
+        "url": "/send_PID_niv",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3750,
+        "y": 1180,
+        "wires": [
+            [
+                "a9f949eb40c24b2f"
+            ]
+        ]
+    },
+    {
+        "id": "a9f949eb40c24b2f",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.send_PID_niv",
+        "action": "",
+        "pretty": false,
+        "x": 3980,
+        "y": 1180,
+        "wires": [
+            [
+                "64375c09b361d66a"
+            ]
+        ]
+    },
+    {
+        "id": "64375c09b361d66a",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBX4",
+        "func": "msg.topic = \"DB17.DBD4\";\n\nmsg.payload = Number(msg.payload.Send_PID_niv);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4200,
+        "y": 1180,
+        "wires": [
+            [
+                "b8667ba6be8b80da"
+            ]
+        ]
+    },
+    {
+        "id": "b8667ba6be8b80da",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Send_PID_Niv",
+        "name": "PLC WRITE",
+        "x": 4440,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "4957631afd7dc020",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "SALIDA MAN PID TEMP",
+        "url": "/send_PID_temp",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 5010,
+        "y": 1180,
+        "wires": [
+            [
+                "09c174f04f8ba8f6"
+            ]
+        ]
+    },
+    {
+        "id": "09c174f04f8ba8f6",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.send_PID_niv",
+        "action": "",
+        "pretty": false,
+        "x": 5240,
+        "y": 1180,
+        "wires": [
+            [
+                "a6e923ffd415eaca"
+            ]
+        ]
+    },
+    {
+        "id": "a6e923ffd415eaca",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,DBD26",
+        "func": "msg.topic = \"DB17.DBD26\";\n\nmsg.payload = Number(msg.payload.Send_PID_temp);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 5460,
+        "y": 1180,
+        "wires": [
+            [
+                "4852c183176be436"
+            ]
+        ]
+    },
+    {
+        "id": "4852c183176be436",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "Send_PID_temp",
+        "name": "PLC WRITE",
+        "x": 5700,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "55b96ed49bc86d40",
+        "type": "http in",
+        "z": "858835c4dddfb63d",
+        "name": "Reset Alarmas",
+        "url": "/sendResetAlarm",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 3820,
+        "y": 560,
+        "wires": [
+            [
+                "c00db3bb0a497ced"
+            ]
+        ]
+    },
+    {
+        "id": "c00db3bb0a497ced",
+        "type": "json",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "property": "payload.proceso",
+        "action": "",
+        "pretty": false,
+        "x": 3980,
+        "y": 560,
+        "wires": [
+            [
+                "80cea3853fc38c78"
+            ]
+        ]
+    },
+    {
+        "id": "80cea3853fc38c78",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "WRITE DB17,X71.0",
+        "func": "msg.topic = \"DB17.DBX71.0\";\n\nmsg.payload = Number(msg.payload.SendResetAlarm);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 4200,
+        "y": 560,
+        "wires": [
+            [
+                "71dd76b45194b94b"
+            ]
+        ]
+    },
+    {
+        "id": "71dd76b45194b94b",
+        "type": "s7 out",
+        "z": "858835c4dddfb63d",
+        "endpoint": "93f6bfeb2182f912",
+        "variable": "SendResetAlarm",
+        "name": "PLC WRITE",
+        "x": 4440,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "906ab545f5766108",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "recorta decimales",
+        "func": "msg.payload = Number(msg.payload).toFixed(4);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2670,
+        "y": 1680,
+        "wires": [
+            [
+                "094fb85e2bca0414"
+            ]
+        ]
+    },
+    {
+        "id": "ce1ddbcfb57fd7ae",
+        "type": "debug",
+        "z": "858835c4dddfb63d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4260,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1a9a8b1120ff7eb0",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "grafica exportable",
+        "func": "let grafica = flow.get(\"ultimaGraficaTemp\");\n\nif (!grafica) {\n    node.warn(\"No hay gráfica\");\n    return null;\n}\n\nmsg.payload = JSON.stringify(grafica);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1870,
+        "y": 1380,
+        "wires": [
+            [
+                "b14f3866d0888965"
+            ]
+        ]
+    },
+    {
+        "id": "7432f09c06d4fd11",
+        "type": "ui_button",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "5cc1fa82dc5843e8",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Exportar PDF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1660,
+        "y": 1380,
+        "wires": [
+            [
+                "1a9a8b1120ff7eb0"
+            ]
+        ]
+    },
+    {
+        "id": "6225be9003a4e1c5",
+        "type": "exec",
+        "z": "858835c4dddfb63d",
+        "command": "python C:\\Users\\jor_b\\.node-red\\generar_pdf.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 2560,
+        "y": 1380,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b14f3866d0888965",
+        "type": "file",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "filename": "C:\\Users\\jor_b\\.node-red\\grafica_temp.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 2170,
+        "y": 1380,
+        "wires": [
+            [
+                "6225be9003a4e1c5"
+            ]
+        ]
+    },
+    {
+        "id": "9791fefb879eb85e",
+        "type": "function",
+        "z": "858835c4dddfb63d",
+        "name": "grafica exportable",
+        "func": "let grafica = flow.get(\"ultimaGraficaNiv\");\n\nif (!grafica) {\n    node.warn(\"No hay gráfica\");\n    return null;\n}\n\nmsg.payload = JSON.stringify(grafica);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3070,
+        "y": 1380,
+        "wires": [
+            [
+                "ebb983c9d188f453"
+            ]
+        ]
+    },
+    {
+        "id": "2d4ec5ba4e7c341e",
+        "type": "ui_button",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "group": "5699fc037d295838",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Exportar PDF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2860,
+        "y": 1380,
+        "wires": [
+            [
+                "9791fefb879eb85e"
+            ]
+        ]
+    },
+    {
+        "id": "b244eeb1051b1a9d",
+        "type": "exec",
+        "z": "858835c4dddfb63d",
+        "command": "python C:\\Users\\jor_b\\.node-red\\generar_pdf_nivel.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 3780,
+        "y": 1380,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ebb983c9d188f453",
+        "type": "file",
+        "z": "858835c4dddfb63d",
+        "name": "",
+        "filename": "C:\\Users\\jor_b\\.node-red\\grafica_nivel.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 3370,
+        "y": 1380,
+        "wires": [
+            [
+                "b244eeb1051b1a9d"
+            ]
+        ]
+    }
+]

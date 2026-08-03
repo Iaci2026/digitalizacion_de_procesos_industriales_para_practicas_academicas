@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SCADA</title>
+
+    <style>
+        body {
+            background: #111;
+            color: #00ff9c;
+            font-family: Arial;
+            margin: 0;
+            padding: 10px;
+        }
+        .contenedor-rejilla {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas iguales */
+        grid-template-rows: repeat(4, 1fr); /* Crea 4 filas iguales */
+        gap: 10px;
+        height: 100vh; /* Opcional: hace que la rejilla ocupe toda la altura de la pantalla */
+        }
+
+        .topbar {
+            border: 2px solid #00ff9c;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .main {
+            display: grid;
+            gap: 10px;
+
+        }
+
+        .izq {
+            border: 2px solid #00ff9c;
+            border-radius: 10px;
+            padding: 15px;
+            grid-row: 4; 
+            grid-column: 1;
+
+        }
+        .der {
+        border: 2px solid #00ff9c;
+        border-radius: 10px;
+        padding: 15px;
+        grid-row: 4; 
+        grid-column: 2;
+        
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+        }
+
+        button {
+            width: 170px;
+            height: 55px;
+            font-size: 18px;
+            background: #00aa66;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .stop {
+            background: red;
+        }
+
+        input {
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+            margin: 5px;
+            text-align: center;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .valor {
+            font-size: 24px;
+            margin: 10px 0;
+
+        }
+        .section11 {
+            border: 2px solid #00ff9c;
+            border-radius: 10px;
+            padding: 15px;
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .section21 {
+            border: 2px solid #00ff9c;
+            border-radius: 10px;
+            padding: 15px;
+            grid-row: 3;
+            grid-column: 1;
+        }
+
+        .section22 {
+            border: 2px solid #00ff9c;
+            border-radius: 10px;
+            padding: 15px;
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        .led {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #333;
+            margin-left: 10px;
+            border: 1px solid #666;
+
+        }
+
+        .on {
+            background: #00ff00;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        .alarm {
+            color: red;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 10px;
+
+
+        }
+
+
+
+        @media(max-width:900px) {
+
+
+
+            button {
+                width: 100%;
+            }
+
+            input {
+                width: 95%;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+                 <div class="topbar">
+
+                    <h1>SCADA</h1>
+
+                    <button onclick="sendControlHTML(1)">
+                    HTML ON
+                    </button>
+
+                    <button class="stop" onclick="sendControlHTML(0)">
+                        HTML OFF
+                    </button>
+
+                    <button onclick="sendEncendido(1)">
+                        ENCENDIDO
+                        </button>
+                    <button class="stop" onclick="sendEncendido(0)">
+                        APAGADO
+                        </button>
+
+                    <button class="stop" onclick="sendParo(0)">
+                        PARO GENERAL
+                        </button>
+        
+                    <button  onclick="sendParo(1)">
+                        RESET PARO
+                        </button>
+
+                    <button onclick="sendModo(0)">
+                            Nivel
+                        </button>
+        
+                    <button class="stop" onclick="sendModo(1)">
+                            Temperatura
+                        </button>
+
+                        <div class="valor">
+                            Nivel
+                            <span id="Luz_nivel" class="led"></span>
+                        </div>
+
+                        <div class="valor">
+                            Temperatura
+                            <span id="Luz_temperatura" class="led"></span>
+                        </div>
+                </div>
+
+                    <div class="section11">
+
+                        <div class="valor">
+                            TEMP:
+                            <span id="Temperatura_html">--</span>
+                        </div>
+
+                        <div class="valor">
+                            NIVEL:
+                            <span id="Nivel_html">--</span>
+                        </div>
+
+                        <div class="valor">
+                            PRESION AGUA:
+                            <span id="PresionAgua_html">--</span>
+                        </div>
+
+                        <div class="valor">
+                            PRESION AIRE:
+                            <span id="PresionAire_html">--</span>
+                        </div>
+
+                        <div class="valor">
+                            CAUDAL:
+                            <span id="Caudal_html">--</span>
+                        </div>
+
+                    </div>
+
+                    <div class="section21">
+
+                        <h2>ESTADOS</h2>
+
+                        <div class="valor">
+                            ENLACE:
+                            <span id="Confirmacion_HTML_led" ></span>
+                        </div>
+
+                        <div class="valor">
+                            KM1
+                            <span id="Confirmacion_km1_led" class="led"></span>
+                        </div>
+
+                        <div class="valor">
+                            MB01
+                            <span id="Luz_mb_001_led" class="led"></span>
+                        </div>
+
+                        <div class="valor">
+                            MB02
+                            <span id="Luz_mb_002_led" class="led"></span>
+                        </div>
+
+                        <div class="valor">
+                            COOLER
+                            <span id="Luz_cool_led" class="led"></span>
+                        </div>
+
+                        <div class="valor">
+                            RESISTENCIA
+                            <span id="Luz_res_led" class="led"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="section22">
+
+                        <h2>ALARMAS</h2>
+                    <div class="valor">
+                        RESET ALARMAS
+                        <span id="Luz_reset_alarmas" class="led"></span>
+                    </div>
+
+                    <button class="stop" onclick="sendResetAlarm()">
+                        RESET ALARMAS
+                    </button>
+
+
+                        <div class="alarm">
+                            PARO EMERGENCIA:
+                            <span id="AlarmaParo_html">--</span>
+                        </div>
+
+                        <div class="alarm">
+                            NIVEL ALTO ALTO:
+                            <span id="alarma_nivel_alto_alto">--</span>
+                        </div>
+
+                        <div class="alarm">
+                            TEMPERATURA ALTA:
+                            <span id="alarma_temperatura_alta">--</span>
+                        </div>
+
+                        <div class="alarm">
+                            AIRE BAJO:
+                            <span id="alarma_aire_bajo">--</span>
+                        </div>
+
+                        <div class="alarm">
+                            NIVEL ALTO:
+                            <span id="alarma_nivel_alto">--</span>
+                        </div>
+
+                    </div>
+
+
+
+    <div class="main">
+    
+        <!-- ================================= -->
+        <!-- NIVEL -->
+        <!-- ================================= -->
+    
+        <div class="izq">
+    
+            <h2>CONTROL NIVEL</h2>
+    
+            <div class="valor">
+                NIVEL ACTUAL:
+                <span id="Nivel_html2">--</span>
+            </div>
+    
+            <!-- SETPOINT -->
+    
+            <div class="section">
+    
+                <h3>SETPOINT NIVEL</h3>
+    
+                <div class="valor">
+                    SP ACTUAL:
+                    <span id="SP_Niv_html">--</span>
+                </div>
+    
+                <input id="spNivel" type="text" inputmode="decimal">
+    
+                <button onclick="sendSPNivel()">
+                    ENVIAR SP
+                </button>
+    
+            </div>
+    
+            <!-- PID -->
+    
+            <div class="section">
+            
+                <h3>PID NIVEL</h3>
+            
+                <div class="valor">
+                    KP:
+                    <span id="Kp_Nivel_html">--</span>
+                </div>
+            
+                <div class="valor">
+                    KI:
+                    <span id="Ki_Nivel_html">--</span>
+                </div>
+            
+                <div class="valor">
+                    KD:
+                    <span id="Kd_Nivel_html">--</span>
+                </div>
+            
+                <hr>
+            
+                <input id="kpNivel" type="text" placeholder="Nuevo KP">
+                <input id="kiNivel" type="text" placeholder="Nuevo KI">
+                <input id="kdNivel" type="text" placeholder="Nuevo KD">
+            
+                <br>
+            
+                <button onclick="sendPIDNivel()">
+                    ENVIAR PID
+                </button>
+            
+            
+    
+                <button class="stop" onclick="sendPIDNivelOFF(1)">
+                    PID OFF
+                </button>
+
+
+
+                <button onclick="sendPIDNivelOFF(0)">
+                    PID ON
+                </button>
+               
+                <div class="valor">
+                    off
+                    <span id="Luz_pid_off_niv" class="led"></span>
+                </div>
+                
+            
+                
+            </div>
+    
+            <!-- MODO NIVEL -->
+    
+            <div class="section">
+    
+                <h3>MODO NIVEL</h3>
+    
+                <button onclick="sendNivModo(1)">
+                    AUTO
+                </button>
+    
+                <button class="stop" onclick="sendNivModo(0)">
+                    MANUAL
+                </button>
+
+                <div class="valor">
+                    automático
+                    <span id="Luz_pid_auto_niv" class="led"></span>
+                </div>
+                
+    
+            </div>
+    
+            <!-- SALIDA PID -->
+    
+            <div class="section">
+    
+                <h3>SALIDA PID %</h3>
+    
+                <div class="valor">
+                    % :
+                    <span id="Salida_PID_Nivel">--</span>
+                </div>
+    
+                <input id="send_PID_niv" type="text" inputmode="decimal">
+    
+                <button onclick="salidaPIDMan1()">
+                    ENVIAR %
+                </button>
+    
+            </div>
+    
+        </div>
+    
+        <!-- ================================= -->
+        <!-- TEMPERATURA -->
+        <!-- ================================= -->
+    
+        <div class="der">
+    
+            <h2>CONTROL TEMPERATURA</h2>
+    
+            <div class="valor">
+                TEMP ACTUAL:
+                <span id="Temperatura_html2">--</span>
+            </div>
+    
+            <!-- SETPOINT -->
+    
+            <div class="section">
+    
+                <h3>SETPOINT TEMP</h3>
+    
+                <div class="valor">
+                    SP ACTUAL:
+                    <span id="SP_Temp_html">--</span>
+                </div>
+    
+                <input id="spTemp" type="text" inputmode="decimal">
+    
+                <button onclick="sendSPTemp()">
+                    ENVIAR SP
+                </button>
+    
+            </div>
+    
+            <!-- PID -->
+    
+            <div class="section">
+            
+                <h3>PID TEMPERATURA</h3>
+            
+                <div class="valor">
+                    KP:
+                    <span id="Kp_Temp_html">--</span>
+                </div>
+            
+                <div class="valor">
+                    KI:
+                    <span id="Ki_Temp_html">--</span>
+                </div>
+            
+                <div class="valor">
+                    KD:
+                    <span id="Kd_Temp_html">--</span>
+                </div>
+            
+                <hr>
+            
+                <input id="kpTemp" type="text" placeholder="Nuevo KP">
+                <input id="kiTemp" type="text" placeholder="Nuevo KI">
+                <input id="kdTemp" type="text" placeholder="Nuevo KD">
+            
+                <br>
+            
+                <button onclick="sendPIDTemp()">
+                    ENVIAR PID
+                </button>
+            
+            
+    
+                <button class="stop" onclick="sendPIDTempOFF(1)">
+                    PID OFF
+                </button>
+    
+                <button onclick="sendPIDTempOFF(0)">
+                    PID ON
+                </button>
+                
+                <div class="valor">
+                    off
+                    <span id="Luz_pid_off_temp" class="led"></span>
+                </div>
+                
+                
+    
+            </div>
+    
+            <!-- MODO -->
+    
+            <div class="section">
+    
+                <h3>MODO TEMP</h3>
+    
+                <button onclick="sendTempModo(1)">
+                    AUTO
+                </button>
+    
+                <button class="stop" onclick="sendTempModo(0)">
+                    MANUAL
+                </button>
+               
+                <div class="valor">
+                    automático
+                    <span id="Luz_pid_auto_temp" class="led"></span>
+                </div>
+                
+    
+            </div>
+    
+            <!-- SALIDA PID -->
+    
+            <div class="section">
+    
+                <h3>SALIDA PID %</h3>
+    
+                <div class="valor">
+                    % :
+                    <span id="Salida_PID_temperatura">--</span>
+                </div>
+    
+                <input id="send_PID_temp" type="text" inputmode="decimal">
+    
+                <button onclick="salidaPIDMan()">
+                    ENVIAR %
+                </button>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <script>
+        function post(url, obj) {
+
+            var x = new XMLHttpRequest();
+
+            x.open('POST', url, true);
+
+            x.setRequestHeader(
+                'Content-Type',
+                'application/json'
+            );
+
+            x.send(JSON.stringify(obj));
+
+        }
+
+        //
+        // CONTROL GENERAL
+        //
+
+        function sendControlHTML(v) {
+
+            post('/setcontrolhtml', {
+                ControlHTML: v
+            });
+
+        }
+
+        function sendEncendido(v) {
+
+            post('/setencendido', {
+                EncendidoGeneral: v
+            });
+
+        }
+
+        function sendParo(v) {
+        
+        post('/setparo', {
+        Boton_paro_html: v
+        });
+        
+        }
+
+        function sendModo(v) {
+        
+        post('/sendModo', {
+        SendModo: v
+        });
+        
+        }
+
+        //
+        // SETPOINTS
+        //
+
+        function sendSPTemp() {
+
+            post('/setsptemp', {
+
+                SP_Temp: parseFloat(
+                    document.getElementById('spTemp').value.replace(",", ".")
+                )
+
+            });
+
+        }
+
+        function sendSPNivel() {
+
+            post('/setspnivel', {
+
+                SP_Nivel: parseFloat(
+                    document.getElementById('spNivel').value.replace(",", ".")
+                )
+
+            });
+
+        }
+
+        //
+        // SALIDA PID MANUAL
+        //
+
+        function salidaPIDMan() {
+
+            post('/send_PID_temp', {
+
+                Send_PID_temp: parseFloat(
+                    document.getElementById('send_PID_temp').value.replace(",", ".")
+                )
+
+            });
+
+        }
+        function salidaPIDMan1() {
+        
+        post('/send_PID_niv', {
+        
+        Send_PID_niv: parseFloat(
+        document.getElementById('send_PID_niv').value.replace(",", ".")
+        )
+        
+        });
+        
+        }
+        //
+        // PID TEMP
+        //
+
+        function sendPIDTemp() {
+
+            post('/setpidtemp', {
+
+                Kp_Temp: parseFloat(
+                    document.getElementById('kpTemp').value.replace(",", ".")
+                ),
+
+                Ki_Temp: parseFloat(
+                    document.getElementById('kiTemp').value.replace(",", ".")
+                ),
+
+                Kd_Temp: parseFloat(
+                    document.getElementById('kdTemp').value.replace(",", ".")
+                )
+
+            });
+
+        }
+
+        //
+        // PID NIVEL
+        //
+
+        function sendPIDNivel() {
+
+            post('/setpidnivel', {
+
+                Kp_Nivel: parseFloat(
+                    document.getElementById('kpNivel').value.replace(",", ".")
+                ),
+
+                Ki_Nivel: parseFloat(
+                    document.getElementById('kiNivel').value.replace(",", ".")
+                ),
+
+                Kd_Nivel: parseFloat(
+                    document.getElementById('kdNivel').value.replace(",", ".")
+                )
+
+            });
+
+        }
+
+        //
+        // PID OFF
+        //
+
+        function sendPIDTempOFF(v) {
+
+            post('/setpidtempoff', {
+                PIDTempOFF: v
+            });
+
+        }
+
+        function sendPIDNivelOFF(v) {
+
+            post('/setpidniveloff', {
+                PIDNivelOFF: v
+            });
+
+        }
+
+        //
+        // MODOS
+        //
+        function sendResetAlarm() {
+        
+        // Enviar 1
+        post('/sendResetAlarm', {
+        SendResetAlarm: 1
+        });
+        
+        // Después de 200 ms volver a 0
+        setTimeout(function () {
+        
+        post('/sendResetAlarm', {
+        SendResetAlarm: 0
+        });
+        
+        }, 300);
+        
+        }
+        
+        function sendTempModo(v) {
+
+            post('/settempmodo', {
+
+                TempModo: v
+
+            });
+
+        }
+
+        function sendNivModo(v) {
+
+            post('/setnivmodo', {
+
+                NivModo: v
+
+            });
+
+        }
+
+
+        //
+        // LEDS
+        //
+
+        function setLed(id, estado) {
+
+            var led = document.getElementById(id);
+
+            if (estado) {
+
+                led.classList.add("on");
+
+            } else {
+
+                led.classList.remove("on");
+
+            }
+
+        }
+
+        //
+        // UPDATE
+        //
+
+
+function update() {
+
+    function f2(v) {
+    return (v == null) ? "--" : Number(v).toFixed(2);
+    }
+    var x = new XMLHttpRequest();
+
+    x.open('GET', '/datos', true);
+
+    x.timeout = 3000;
+
+    x.onreadystatechange = function () {
+
+        if (x.readyState == 4 && x.status == 200) {
+
+            try {
+
+                var d = JSON.parse(x.responseText);
+
+                //
+                // VARIABLES
+                //
+
+                document.getElementById('Temperatura_html').innerHTML =
+                    d.Temperatura_html ?? "--";
+
+                document.getElementById('Temperatura_html2').innerHTML =
+                    d.Temperatura_html ?? "--";
+
+                document.getElementById('Nivel_html').innerHTML =
+                    d.Nivel_html ?? "--";
+
+                document.getElementById('Nivel_html2').innerHTML =
+                    d.Nivel_html ?? "--";
+
+                document.getElementById('PresionAgua_html').innerHTML =
+                    d.PresionAgua_html ?? "--";
+
+                document.getElementById('PresionAire_html').innerHTML =
+                    d.PresionAire_html ?? "--";
+
+                document.getElementById('Caudal_html').innerHTML =
+                    d.Caudal_html ?? "--";
+
+                document.getElementById('SP_Temp_html').innerHTML =
+                    d.SP_Temp_html ?? "--";
+
+                document.getElementById('SP_Niv_html').innerHTML =
+                    d.SP_Niv_html ?? "--";
+
+                document.getElementById('Kp_Nivel_html').innerHTML = f2(d.Kp_Nivel_html);
+                document.getElementById('Ki_Nivel_html').innerHTML = f2(d.Ki_Nivel_html);
+                document.getElementById('Kd_Nivel_html').innerHTML = f2(d.Kd_Nivel_html);
+                
+                document.getElementById('Kp_Temp_html').innerHTML = f2(d.Kp_Temp_html);
+                document.getElementById('Ki_Temp_html').innerHTML = f2(d.Ki_Temp_html);
+                document.getElementById('Kd_Temp_html').innerHTML = f2(d.Kd_Temp_html);
+
+                //
+                // SALIDAS PID
+                //
+
+                document.getElementById('Salida_PID_temperatura').innerHTML =
+                    d.Salida_PID_temperatura ?? "--";
+
+                document.getElementById('Salida_PID_Nivel').innerHTML =
+                    d.Salida_PID_Nivel ?? "--";
+
+                //
+                // LEDS
+                //
+
+                setLed("Confirmacion_km1_led", d.ConfirmacionKM1);
+
+
+                setLed("Luz_mb_001_led", d.MB001);
+
+                setLed("Luz_mb_002_led", d.MB002);
+
+                setLed("Luz_nivel", d.Eleccion_proceso_html == 0);
+
+                setLed("Luz_temperatura", d.Eleccion_proceso_html);
+
+                setLed("Luz_pid_off_niv", d.PIDNivelOFF);
+
+                setLed("Luz_pid_off_temp", d.PIDTempOFF);
+
+                setLed("Luz_pid_auto_temp", d.Autotemp);
+
+                setLed("Luz_pid_auto_niv", d.Autoniv);
+
+                setLed("Luz_cool_led", d.Cooler);
+
+                setLed("Luz_res_led", d.Resistencia);
+
+                setLed("Luz_reset_alarmas", d.SendResetAlarm);
+
+                //
+                // ALARMAS
+                //
+                document.getElementById('Confirmacion_HTML_led').innerHTML =
+                d.Confirmacion_HTML_led ? "DESCONECTADO" : "CONECTADO";
+
+                document.getElementById('AlarmaParo_html').innerHTML =
+                d.AlarmaParo_html ? "ACTIVA" : "NORMAL";            
+
+
+                document.getElementById('alarma_nivel_alto_alto').innerHTML =
+                    d.AlarmaNivelAA_html ? "ACTIVA" : "NORMAL";
+
+                document.getElementById('alarma_temperatura_alta').innerHTML =
+                    d.AlarmaTempAlta_html ? "ACTIVA" : "NORMAL";
+
+                document.getElementById('alarma_aire_bajo').innerHTML =
+                    d.AlarmaPresionAireBaja_html ? "ACTIVA" : "NORMAL";
+
+                document.getElementById('alarma_nivel_alto').innerHTML =
+                    d.AlarmaNivelAlto_html ? "ACTIVA" : "NORMAL";
+
+            } catch (e) {
+
+                console.log("ERROR JSON:", e);
+
+            }
+
+        }
+
+    };
+
+    x.onerror = function () {
+
+        console.log("ERROR AJAX");
+
+    };
+
+    x.ontimeout = function () {
+
+        console.log("TIMEOUT");
+
+    };
+
+    x.send();
+
+}
+
+        setInterval(update, 2000);
+
+        update();
+
+    </script>
+
+</body>
+
+</html>
